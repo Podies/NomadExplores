@@ -1,0 +1,48 @@
+$accent-color: #4ddcb1;
+$font-color: #fff;
+
+@mixin clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content:'';
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+%flex-between {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+%center {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+%primary-btn {
+	padding: 10px 30px;
+  border-radius: 40px;
+  color: #fff;
+  cursor: pointer;
+  background-color: transparent;
+  text-transform: uppercase;
+  font-weight: 300;
+  line-height: 29px;
+  letter-spacing: 0.1em;
+  &:focus {
+    outline: 0;
+  }
+}
+
+$browser-context: 14px; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
