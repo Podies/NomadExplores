@@ -6,3 +6,5 @@
 6. FAQs seem incomplete.
 7. Make Pricing box look better.
 8. Link social media.
+9. SEO
+10. Analytics - embed.
