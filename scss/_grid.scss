@@ -2,6 +2,7 @@
   max-width: 1280px;
   width: 100%;
 	margin: 0 auto;
+  padding: 0 30px;
 }
 
 .grid:before,
@@ -57,7 +58,7 @@
   }
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 769px) {
   @for $i from 1 through 12 {
   	.col-md-#{$i} {
   		width: (100% / 12) * $i;

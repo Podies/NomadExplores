@@ -1,8 +1,7 @@
 .grid {
   max-width: 1280px;
   width: 100%;
-  margin: 0 auto;
-  padding: 0 30px; }
+  margin: 0 auto; }
 
 .grid:before,
 .grid:after,
@@ -172,7 +171,7 @@
 
   .col-lg-offset-12 {
     margin-left: 100%; } }
-@media all and (min-width: 769px) {
+@media all and (min-width: 768px) {
   .col-md-1 {
     width: 8.33333%; }
 
@@ -468,7 +467,7 @@ body {
   justify-content: space-between;
   align-items: center; }
 
-.hero-text, .about-text, .activity-card__title p, .icon-container span, .pricing-card .pricing-content {
+.hero-text, .about-text, .activity-card__title, .icon-container span {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -489,8 +488,6 @@ body {
 
 .hero-section {
   position: relative;
-  max-height: 800px;
-  height: 100%;
   background-image: linear-gradient(-180deg, rgba(92, 37, 141, 0.6) -20%, rgba(77, 220, 177, 0.6) 100%);
   overflow: hidden; }
   .hero-section figure {
@@ -527,7 +524,7 @@ body {
   float: left; }
 
 .header {
-  padding: 0px 6.25%;
+  padding: 0px 80px;
   font-family: 'Raleway', sans-serif;
   position: fixed;
   left: 0;
@@ -551,7 +548,7 @@ body {
   .nav-links li a {
     font-size: 18px;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 300;
     letter-spacing: 0.08em;
     position: relative;
     padding: 10px 0;
@@ -591,10 +588,9 @@ body {
   text-align: center;
   font-weight: 300; }
   .hero-text .hero-text__1 {
-    font-size: 30px;
-    line-height: 45px; }
+    font-size: 56px; }
     .hero-text .hero-text__1 span:last-child {
-      font-size: 44px;
+      font-size: 80px;
       line-height: 66px;
       font-weight: 700; }
   .hero-text .hero-text__location {
@@ -666,26 +662,21 @@ body {
 
 .activity-card {
   position: relative;
-  margin-bottom: -4px; }
+  height: 300px;
+  background: rgba(0, 0, 0, 0.6); }
   .activity-card img {
-    background-color: rgba(0, 0, 0, 0.7); }
+    position: absolute;
+    width: 360px;
+    height: 300px;
+    z-index: -1; }
 
 .activity-card__title {
-  position: absolute;
   width: 100%;
-  padding: 30px;
-  top: 0;
-  bottom: 4px;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.7); }
+  padding: 30px; }
   .activity-card__title p {
     font-size: 24px;
     text-align: center;
-    font-weight: 400;
-    vertical-align: middle;
-    padding: 10px;
-    width: 100%; }
+    font-weight: 400; }
 
 .facilities {
   background-color: #f6f6f6;
@@ -713,13 +704,7 @@ body {
 
 .pricing {
   padding: 140px 0;
-  background-color: #4ddcb1;
-  background: #348F50;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #56B4D3, #348F50);
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #56B4D3, #348F50);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  background-color: #4ddcb1; }
 
 .pricing-table {
   display: flex;
@@ -727,33 +712,33 @@ body {
   margin-top: 20px; }
 
 .pricing-card {
-  position: relative;
   background-color: #f6f6f6;
+  padding: 40px 45px 40px 55px;
   color: #25b489;
   font-size: 22px;
-  line-height: 40px;
-  height: 230px;
-  width: 303px; }
-  .pricing-card .pricing-content {
-    width: 75%; }
+  line-height: 40px; }
   .pricing-card h2 {
     color: #ff0000;
     font-weight: 400; }
   .pricing-card ul {
     margin-top: 30px; }
     .pricing-card ul li {
-      list-style: inherit;
-      display: inline-block; }
+      list-style: inherit; }
   .pricing-card .covered-info {
     position: relative;
     list-style: inherit; }
     .pricing-card .covered-info a {
       position: absolute;
-      top: -5px;
-      right: -18px; }
+      top: -10px;
+      right: -20px; }
       .pricing-card .covered-info a .flaticon-logo:before {
         font-size: 14px;
         color: #11a075; }
+  .pricing-card:first-child {
+    padding: 40px 35px 40px 55px; }
+    .pricing-card:first-child .covered-info a {
+      position: absolute;
+      right: -5px; }
 
 .availability-info {
   font-style: italic;
@@ -794,8 +779,7 @@ footer {
 .copyright-text {
   color: #333;
   font-size: 16px;
-  font-weight: 400;
-  text-align: right; }
+  font-weight: 400; }
 
 .faqs-page {
   color: #333;
@@ -824,28 +808,6 @@ footer {
   .secondary-header a {
     color: #ff0000; }
 
-.location-page {
-  color: #333;
-  background-color: #f9f9f9;
-  padding: 175px 0 80px 0; }
-  .location-page ol {
-    padding: 0 20px; }
-    .location-page ol li {
-      list-style-type: decimal !important;
-      font-size: 20px;
-      line-height: 30px;
-      color: #555; }
-  .location-page p {
-    font-size: 20px;
-    line-height: 36px;
-    margin-top: 16px;
-    font-style: italic;
-    color: #555; }
-  .location-page h1 {
-    margin-top: 80px; }
-    .location-page h1:first-child {
-      margin-top: 0; }
-
 .footer-btn {
   font-size: 14px;
   background-color: #000;
@@ -861,327 +823,4 @@ footer {
   .clearfix:after {
     clear: both; }
 
-#toggle, .menu-icon {
-  display: none; }
-
-@media all and (max-width: 1200px) {
-  .activity-card__title p {
-    font-size: 20px;
-    text-align: center; } }
-@media all and (max-width: 960px) {
-  .grid {
-    padding: 0 30px; }
-
-  .logo {
-    width: 103px; }
-
-  .hero-text .hero-text__1 {
-    font-size: 24px;
-    line-height: 36px; }
-    .hero-text .hero-text__1 span:last-child {
-      font-size: 36px;
-      line-height: 54px; }
-  .hero-text .hero-text__location {
-    font-size: 20px;
-    line-height: 30px; }
-  .hero-text .hero-text__2 {
-    font-size: 20px;
-    line-height: 30px; }
-  .hero-text time {
-    font-size: 20px; }
-
-  .heading-text {
-    font-size: 36px;
-    margin-bottom: 30px; }
-
-  .about-text__1 {
-    font-size: 20px;
-    line-height: 30px; }
-
-  .about-text__2 {
-    margin-top: 24px;
-    font-size: 20px;
-    line-height: 30px; }
-
-  .activity-card__title p {
-    font-size: 16px;
-    text-align: center; }
-
-  .pricing-card {
-    font-size: 18px;
-    line-height: 27px;
-    height: 200px;
-    width: 230px; }
-    .pricing-card h2 {
-      color: #ff0000;
-      font-weight: 400;
-      font-size: 30px; } }
-@media all and (max-width: 769px) {
-  .grid {
-    padding: 0 30px; }
-
-  .header {
-    padding: 20px 6.25% !important;
-    background-color: #fff !important; }
-
-  #logo1 {
-    display: none !important; }
-
-  #logo2 {
-    display: block !important; }
-
-  .hero-text .hero-text__1 {
-    font-size: 20px;
-    line-height: 30px; }
-    .hero-text .hero-text__1 span:last-child {
-      font-size: 24px;
-      line-height: 36px; }
-  .hero-text .hero-text__location {
-    font-size: 16px;
-    line-height: 24px; }
-  .hero-text .hero-text__2 {
-    font-size: 16px;
-    line-height: 24px;
-    margin: 20px 0; }
-  .hero-text time {
-    font-size: 16px; }
-
-  .hamburger-icon {
-    width: 20px;
-    height: 2px;
-    background: #ff0000;
-    transition: all 0.3s ease-in-out;
-    margin-bottom: 5px; }
-
-  .menu-icon {
-    display: inline-block;
-    cursor: pointer;
-    position: relative;
-    width: 30px;
-    height: 30px;
-    padding-top: 7px;
-    z-index: 100; }
-
-  #toggle:checked ~ .menu-icon {
-    position: relative; }
-    #toggle:checked ~ .menu-icon .icon-2 {
-      display: none;
-      transition: all 0.2s ease-in-out; }
-    #toggle:checked ~ .menu-icon .icon-1 {
-      transform: rotate(135deg);
-      position: absolute;
-      top: 50%; }
-    #toggle:checked ~ .menu-icon .icon-3 {
-      transform: rotate(-135deg);
-      position: absolute;
-      top: 50%; }
-
-  .menu {
-    flex-direction: column;
-    position: absolute;
-    left: -100%;
-    top: -100%;
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
-    background: #f9f9f9;
-    align-items: center;
-    justify-content: center;
-    margin: 0 auto; }
-    .menu li {
-      margin-right: 0;
-      width: 100%;
-      text-align: center; }
-      .menu li a {
-        display: inline-block;
-        margin-bottom: 20px;
-        font-size: 30px;
-        font-weight: 700;
-        color: #ff0000 !important;
-        opacity: 0.1;
-        transform: translateY(20px);
-        transition: all 350ms ease-in-out; }
-        .menu li a.cta-btn {
-          color: #fff !important;
-          font-weight: 300;
-          font-size: 14px; }
-
-  #toggle:checked ~ .menu {
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    animation-name: stretch;
-    animation-duration: 1s;
-    animation-timing-function: easein-in-out;
-    overflow: hidden; }
-    #toggle:checked ~ .menu li a {
-      transform: translateY(0px);
-      opacity: 1; }
-
-  .hero-section__img {
-    height: 800px;
-    height: 100%;
-    float: left;
-    margin-top: 80px; }
-
-  .hero-text {
-    padding-top: 80px; }
-
-  .heading-text {
-    font-size: 30px;
-    line-height: 45px;
-    margin-bottom: 24px; }
-
-  .about-text__1 {
-    font-size: 18px;
-    line-height: 27px; }
-
-  .about-text__2 {
-    font-size: 18px;
-    line-height: 27px;
-    margin-top: 20px; }
-
-  .activity-card__title p {
-    font-size: 24px;
-    text-align: center; }
-
-  .facilities .row:last-child {
-    margin-top: 0px; }
-  .facilities [class^="flaticon-"]:before, .facilities [class*=" flaticon-"]:before,
-  .facilities [class^="flaticon-"]:after, .facilities [class*=" flaticon-"]:after {
-    font-size: 50px; }
-  .facilities p {
-    font-size: 16px; }
-  .facilities .col {
-    margin: 10px;
-    padding: 10px; }
-
-  .icon-container {
-    width: 120px;
-    height: 120px;
-    margin-bottom: 20px; }
-
-  .pricing-table {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-
-  .pricing-card {
-    margin-top: 30px; }
-    .pricing-card:first-child {
-      margin-top: 0; }
-
-  .faqs-page h2 {
-    margin: 20px 0;
-    font-size: 28px; }
-  .faqs-page p {
-    font-size: 16px;
-    line-height: 24px; } }
-@media all and (max-width: 460px) {
-  .grid {
-    padding: 0 20px; }
-
-  .hero-text .hero-text__1 {
-    font-size: 16px;
-    line-height: 24px; }
-    .hero-text .hero-text__1 span:last-child {
-      font-size: 20px;
-      line-height: 30px; }
-  .hero-text .hero-text__location {
-    font-size: 14px;
-    line-height: 21px; }
-  .hero-text .hero-text__2 {
-    font-size: 12px;
-    line-height: 18px;
-    margin: 16px 0; }
-  .hero-text time {
-    font-size: 12px; }
-
-  .heading-text {
-    font-size: 24px;
-    line-height: 45px;
-    margin-bottom: 24px; }
-
-  .about-text__1 {
-    font-size: 14px;
-    line-height: 21px; }
-
-  .about-text__2 {
-    font-size: 14px;
-    line-height: 21px; }
-
-  .activity-card__title p {
-    font-size: 18px;
-    text-align: center; }
-
-  .facilities [class^="flaticon-"]:before, .facilities [class*=" flaticon-"]:before,
-  .facilities [class^="flaticon-"]:after, .facilities [class*=" flaticon-"]:after {
-    font-size: 40px; }
-  .facilities p {
-    font-size: 14px; }
-  .facilities .col {
-    margin: 8px;
-    padding: 8px; }
-
-  .icon-container {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 16px; }
-
-  .pricing-card {
-    font-size: 18px;
-    line-height: 27px;
-    height: 200px;
-    width: 240px; }
-    .pricing-card h2 {
-      color: #ff0000;
-      font-weight: 400;
-      font-size: 30px; }
-
-  .availability-info {
-    margin-top: 40px; }
-    .availability-info p {
-      font-size: 16px; }
-      .availability-info p span {
-        color: #ff0000;
-        font-size: 20px; }
-
-  .primary-btn {
-    font-size: 12px;
-    padding: 6px 16px; }
-
-  footer {
-    background-color: #f9f9f9;
-    padding: 60px 0; }
-    footer .grid {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center; }
-
-  .social {
-    justify-content: center;
-    order: 2;
-    margin-top: 30px; }
-
-  .copyright-text {
-    text-align: center; }
-
-  .faqs-page h2 {
-    margin: 14px 0;
-    font-size: 20px; }
-  .faqs-page p {
-    font-size: 14px;
-    line-height: 21px; }
-
-  .location-page ol li {
-    font-size: 16px;
-    line-height: 24px; }
-  .location-page p {
-    font-size: 18px;
-    line-height: 27px; }
-  .location-page h1 {
-    margin-top: 50px; }
-    .location-page h1:first-child {
-      margin-top: 0; } }
-
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=stle.css.map */

@@ -19,7 +19,7 @@ $(window).scroll(function() {
 		yPos = window.pageYOffset;
 		if (yPos > 165) {
 			header.style.backgroundColor = "#fff";
-			header.style.padding = "20px 80px";
+			header.style.padding = "20px 6.25%";
 			logo1.style.display = "none";
 			logo2.style.display = "block";
 			link1.style.color = "#ff0000";
@@ -28,7 +28,7 @@ $(window).scroll(function() {
 			link4.style.color = "#ff0000";
 		} else {
 			header.style.backgroundColor = "transparent";
-			header.style.padding = "0px 80px";
+			header.style.padding = "0px 6.25%";
 			logo1.style.display = "block";
 			logo2.style.display = "none";
 			link1.style.color = "#fff";

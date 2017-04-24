@@ -1,6 +1,12 @@
 $accent-color: #4ddcb1;
 $font-color: #fff;
 
+$browser-context: 16px; // Default
+
+@function em($pixels, $context: $browser-context) {
+  @return #{$pixels/$context}em;
+}
+
 @mixin clearfix {
   *zoom: 1;
   &:before,
@@ -39,10 +45,4 @@ $font-color: #fff;
   &:focus {
     outline: 0;
   }
-}
-
-$browser-context: 14px; // Default
-
-@function em($pixels, $context: $browser-context) {
-  @return #{$pixels/$context}em;
 }
