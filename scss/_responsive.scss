@@ -191,7 +191,7 @@
     height: 800px;
     height: 100%;
     float: left;
-    margin-top: 80px;
+    margin-top: 49px;
   }
   .hero-text{
     padding-top: 80px;
@@ -264,6 +264,13 @@
   .grid {
     padding: 0 20px;
   }
+  .header {
+    padding: 8px 6.25% !important;
+    background-color: #fff !important;
+  }
+  #logo2 {
+    width: 60px;
+  }
   .hero-text {
     .hero-text__1 {
       font-size: 16px;
@@ -289,7 +296,10 @@
   .heading-text {
     font-size: 24px;
     line-height: 45px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
+  }
+  .about-section{
+    height: 500px;
   }
   .about-text__1 {
     font-size: 14px;
@@ -303,6 +313,12 @@
     p {
       font-size: 18px;
       text-align: center;
+    }
+  }
+  .facilities {
+    padding: 40px 0 40px 0;
+    h1 {
+      margin-bottom: 20px;
     }
   }
   .facilities {
@@ -322,6 +338,14 @@
     width: 100px;
     height: 100px;
     margin-bottom: 16px;
+  }
+  .pricing {
+    padding-bottom: 40px;
+  }
+  .pricing__header {
+    background: $accent-color;
+    height: 200px;
+    padding-top: 40px;
   }
   .pricing-card {
     font-size: 18px;
@@ -349,7 +373,6 @@
     padding: 6px 16px;
   }
   footer {
-    background-color: #f9f9f9;
     padding: 60px 0;
     .grid {
       flex-direction: column;
@@ -393,5 +416,8 @@
         margin-top: 0;
       }
     }
+  }
+  .mouse {
+    display: none;
   }
 }

@@ -6,8 +6,8 @@
   position: relative;
   max-height: 800px;
   height: 100%;
-  background-image: linear-gradient(-180deg, rgba(#0099F7,0.6) -20%, rgba($accent-color,0.6) 100%);
-  // background-color: rgba(#000, 0.4);
+  // background-image: linear-gradient(-180deg, rgba(#0099F7,0.6) -20%, rgba($accent-color,0.6) 100%);
+  background-color: rgba(#000, 0.6);
   // background-image: linear-gradient(-180deg, rgba(#f79d00, 0.3)  -20%, rgba(#64f38c, 0.6) 100%);
   overflow: hidden;
   figure {
@@ -62,7 +62,7 @@
   font-family: 'Raleway', sans-serif;
   position: fixed;
   left: 0;
-  z-index: 9;
+  z-index: 11;
   right: 0;
   transition: width 350ms ease-in-out;
 }
@@ -119,12 +119,12 @@
       }
     }
     .cta-btn {
-      padding: 10px 20px;
+      padding: 12px 20px;
       border-radius: 30px;
       background-color: $accent-color;
       text-transform: uppercase;
       color: #fff;
-      font-size: 16px;
+      font-size: 12px;
       border: 2px solid $accent-color;
       &:before {
         display: none;
@@ -142,28 +142,31 @@
   font-weight: 300;
   @extend %center;
   .hero-text__1 {
-    font-size: 30px;
-    line-height: 45px;
+    font-size: 36px;
+    line-height: 60px;
     span:last-child {
-      font-size: 44px;
-      line-height: 66px;
+      font-size: 64px;
+      line-height: 96px;
       font-weight: 700;
+      // text-transform: uppercase;
+      color: #FF233B;
     }
   }
   .hero-text__location {
     font-size: 24px;
     line-height: 36px;
+    font-weight: 400;
   }
   .hero-text__2 {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 36px;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     margin: 30px 0;
-    font-weight: 400;
+    color: #FF233B;
   }
   time {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 
@@ -172,7 +175,7 @@
   left: 50%;
   width: 30px;
   height: 45px;
-  border: 2px solid #fff;
+  border: 2px solid #FF233B;
   border-radius: 20px;
   text-align: center;
   position: absolute;
@@ -183,7 +186,7 @@
     position: absolute;
     width: 6px;
     height: 13px;
-    border: 2px solid #fff;
+    border: 2px solid #FF233B;
     border-radius: 20px;
     left: 50%;
     top: 6px;
@@ -237,7 +240,7 @@
   position: relative;
   margin-bottom: -4px;
   img {
-    background-color: rgba(#000, 0.7);
+    background-color: rgba(#000, 0.4);
   }
 }
 .activity-card__title {
@@ -257,7 +260,7 @@
     @extend %center;
     padding: 10px;
     width: 100%;
-    // height: 100%;
+    color: #f6f6f6;
   }
 }
 
@@ -300,75 +303,62 @@
 // Pricing
 // =============================================
 .pricing {
-  padding: 140px 0;
-  background-color: $accent-color;
-  background: #348F50;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #34e89e, #0f3443); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-  // background: linear-gradient(to right, $accent-color, #ff0000);
+  background-color: #f6f6f6;
+  padding-bottom: 120px;
+  // background: linear-gradient(to right, #34e89e, #0f3443);
   .heading-text {
     color: #fff;
   }
 }
+.pricing__header {
+  background: $accent-color;
+  height: 300px;
+  padding-top: 100px;
+}
 .pricing-table {
   display: flex;
   justify-content: space-around;
-  margin-top: 20px;
-  // table {
-  //   border-collapse: collapse;
-  //   // border: 1px solid;
-  //   thead{
-  //     background-color: $accent-color - 40;
-  //     font-weight: 400;
-  //   }
-  //   td, th {
-  //     // border: 1px solid;
-  //     padding: 20px;
-  //     font-size: 24px;
-  //     vertical-align: middle;
-  //     .flaticon-checked:before, .flaticon-cancel:before{
-  //       font-size: 24px;
-  //       color: #fff;
-  //     }
-  //   }
-  //   tr{
-  //     td:nth-child(n+2), th:nth-child(n+2){
-  //       text-align: center;
-  //       padding: 20px 40px;
-  //     }
-  //     &:nth-child(even) {
-  //       background-color: $accent-color - 10;
-  //     }
-  //   }
-  // }
+  margin-top: -80px;
 }
 .pricing-card {
   position: relative;
   background-color: #f6f6f6;
-  color: $accent-color;
+  color: #666;
   font-size: 20px;
   line-height: 40px;
   height: 230px;
   width: 303px;
   box-shadow: 10px 10px 40px rgba(#000, 0.4);
+  border-radius: 4px;
   .pricing-content{
     @extend %center;
     width: 75%;
   }
   h2 {
     color: $accent-color;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 40px;
+    font-family: 'quicksand';
   }
   ul {
     margin-top: 30px;
-    // transform: translateX(50%);
     text-align: left;
     li {
       list-style: inherit;
       display: inline-block;
-      // transform: translateX(-50%);
+      margin-left: 20px;
+      position: relative;
+      &:before {
+        content: '';
+        height: 8px;
+        width: 8px;
+        background: #666;
+        border-radius: 50%;
+        position: absolute;
+        left: -20px;
+        top: 50%;
+        margin-top: -4px;
+      }
     }
   }
   .covered-info {
@@ -380,7 +370,7 @@
       right: -18px;
       .flaticon-logo:before {
         font-size: 14px;
-        color: $accent-color;
+        color: #0f3443;
       }
     }
   }
@@ -392,6 +382,7 @@
     font-size: 20px;
     font-weight: 400;
     // font-family: 'raleway';
+    color: #333;
     span {
       color: $accent-color;
       font-size: 24px;
@@ -414,8 +405,9 @@
 // Footer
 // =============================================
 footer {
-  background-color: #f6f6f6;
-  padding: 60px 0;
+  background-color: #333;
+  border-top: 10px solid $accent-color;
+  padding: 50px 0;
   .grid {
     @extend %flex-between;
   }
@@ -436,13 +428,20 @@ footer {
   &:first-child {
     margin-left: 0;
   }
+  &:hover .flaticon-social:before, &:hover .flaticon-social-media:before, &:hover .flaticon-social-1:before {
+    color: $accent-color;
+  }
 }
 .flaticon-social:before, .flaticon-social-media:before, .flaticon-social-1:before {
-  color: black;
+  color: #909090;
   font-size: 40px;
+  transition: all 350ms ease-in-out;
+  &:hover {
+    color: $accent-color;
+  }
 }
 .copyright-text {
-  color: #333;
+  color: #909090;
   font-size: 16px;
   font-weight: 400;
   text-align: right;
