@@ -1,10 +1,10 @@
-1. Change Images in hero slider.
-2. Play with UI gradient in hero.
-3. File linking to be made correct.
-4. About section
-5. Location - embed map.
+1. Change Images in hero slider.		
+2. Play with UI gradient in hero.	  (5th)
+3. File linking to be made correct.   (2nd)
+4. About section					  (1st)
+5. Location - embed map.			  (4th)
 6. FAQs seem incomplete.
-7. Make Pricing box look better.
+7. Make Pricing box look better.	  (3rd)
 8. Link social media.
 9. SEO
 10. Analytics - embed.

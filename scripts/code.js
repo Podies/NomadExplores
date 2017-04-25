@@ -16,16 +16,18 @@ $(window).scroll(function() {
 		link2 = document.getElementById('link2');
 		link3 = document.getElementById('link3');
 		link4 = document.getElementById('link4');
+		link5 = document.getElementById('link5');
 		yPos = window.pageYOffset;
 		if (yPos > 165) {
 			header.style.backgroundColor = "#fff";
 			header.style.padding = "20px 6.25%";
 			logo1.style.display = "none";
 			logo2.style.display = "block";
-			link1.style.color = "#ff0000";
-			link2.style.color = "#ff0000";
-			link3.style.color = "#ff0000";
-			link4.style.color = "#ff0000";
+			link1.style.color = "#F86600";
+			link2.style.color = "#F86600";
+			link3.style.color = "#F86600";
+			link4.style.color = "#F86600";
+			link5.style.color = "#F86600";
 		} else {
 			header.style.backgroundColor = "transparent";
 			header.style.padding = "0px 6.25%";
@@ -35,6 +37,7 @@ $(window).scroll(function() {
 			link2.style.color = "#fff";
 			link3.style.color = "#fff";
 			link4.style.color = "#fff";
+			link5.style.color = "#fff";
 		}
 	}
 	window.addEventListener("scroll", yScroll);

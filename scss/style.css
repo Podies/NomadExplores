@@ -412,22 +412,28 @@ time, mark, audio, video {
   box-sizing: border-box; }
 
 h1 {
-  font-size: 48px; }
+  font-size: 48px;
+  line-height: 67.2px; }
 
 h2 {
-  font-size: 36px; }
+  font-size: 36px;
+  line-height: 50.4px; }
 
 h3 {
-  font-size: 24px; }
+  font-size: 24px;
+  line-height: 22.6px; }
 
 h4 {
-  font-size: 20px; }
+  font-size: 20px;
+  line-height: 28px; }
 
 h5 {
-  font-size: 14px; }
+  font-size: 14px;
+  line-height: 19.6px; }
 
 h6 {
-  font-size: 10px; }
+  font-size: 10px;
+  line-height: 14px; }
 
 p {
   font-size: 14px; }
@@ -463,7 +469,7 @@ body {
   width: 100%;
   height: auto; }
 
-.header, .nav-links, footer .grid {
+.header, .nav-links, footer .grid, .team__member {
   display: flex;
   justify-content: space-between;
   align-items: center; }
@@ -491,7 +497,7 @@ body {
   position: relative;
   max-height: 800px;
   height: 100%;
-  background-image: linear-gradient(-180deg, rgba(92, 37, 141, 0.6) -20%, rgba(77, 220, 177, 0.6) 100%);
+  background-image: linear-gradient(-180deg, rgba(0, 153, 247, 0.6) -20%, rgba(248, 102, 0, 0.6) 100%);
   overflow: hidden; }
   .hero-section figure {
     width: 500%;
@@ -550,7 +556,7 @@ body {
     margin-right: 0; }
   .nav-links li a {
     font-size: 18px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 700;
     letter-spacing: 0.08em;
     position: relative;
@@ -561,7 +567,7 @@ body {
       content: '';
       width: 100%;
       height: 2px;
-      background-color: #ff0000;
+      background-color: #F86600;
       bottom: 0px;
       left: 100%;
       right: 0;
@@ -573,18 +579,21 @@ body {
     content: '';
     width: 100%;
     height: 2px;
-    background-color: #FF0000;
+    background-color: #F86600;
     bottom: 0px;
     left: 0; }
   .nav-links li .cta-btn {
     padding: 10px 20px;
     border-radius: 30px;
-    background-color: #FF0000;
+    background-color: #F86600;
+    text-transform: uppercase;
     color: #fff;
     font-size: 16px;
-    border: 2px solid #FF0000; }
+    border: 2px solid #F86600; }
     .nav-links li .cta-btn:before {
       display: none; }
+  .nav-links li .faqs {
+    text-transform: uppercase; }
 
 .hero-text {
   width: 100%;
@@ -615,10 +624,10 @@ body {
   left: 50%;
   width: 30px;
   height: 45px;
-  border: 2px solid #4ddcb1;
+  border: 2px solid #fff;
   border-radius: 20px;
   text-align: center;
-  position: fixed;
+  position: absolute;
   transform: translateX(-50%);
   animation: scroll 2s infinite;
   z-index: 10; }
@@ -626,7 +635,7 @@ body {
     position: absolute;
     width: 6px;
     height: 13px;
-    border: 2px solid #4ddcb1;
+    border: 2px solid #fff;
     border-radius: 20px;
     left: 50%;
     top: 6px;
@@ -656,13 +665,13 @@ body {
   color: #333; }
 
 .about-text__1 {
-  font-size: 24px;
-  line-height: 36px; }
+  font-size: 20px;
+  line-height: 30px; }
 
 .about-text__2 {
   margin-top: 30px;
-  font-size: 24px;
-  line-height: 36px; }
+  font-size: 20px;
+  line-height: 30px; }
 
 .activity-card {
   position: relative;
@@ -697,14 +706,14 @@ body {
   .facilities h1 {
     margin-bottom: 60px; }
   .facilities p {
-    color: #ff0000;
+    color: #F86600;
     text-transform: capitalize;
     font-size: 18px; }
 
 .icon-container {
   width: 145px;
   height: 145px;
-  border: 1px solid #ff0000;
+  border: 1px solid #F86600;
   border-radius: 50%;
   position: relative;
   left: 50%;
@@ -713,13 +722,15 @@ body {
 
 .pricing {
   padding: 140px 0;
-  background-color: #4ddcb1;
+  background-color: #F86600;
   background: #348F50;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #56B4D3, #348F50);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to bottom, #56B4D3, #348F50);
+  background: linear-gradient(to right, #34e89e, #0f3443);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */ }
+  .pricing .heading-text {
+    color: #fff; }
 
 .pricing-table {
   display: flex;
@@ -729,18 +740,21 @@ body {
 .pricing-card {
   position: relative;
   background-color: #f6f6f6;
-  color: #25b489;
-  font-size: 22px;
+  color: #F86600;
+  font-size: 20px;
   line-height: 40px;
   height: 230px;
-  width: 303px; }
+  width: 303px;
+  box-shadow: 10px 10px 40px rgba(0, 0, 0, 0.4); }
   .pricing-card .pricing-content {
     width: 75%; }
   .pricing-card h2 {
-    color: #ff0000;
-    font-weight: 400; }
+    color: #F86600;
+    font-weight: 400;
+    font-size: 40px; }
   .pricing-card ul {
-    margin-top: 30px; }
+    margin-top: 30px;
+    text-align: left; }
     .pricing-card ul li {
       list-style: inherit;
       display: inline-block; }
@@ -753,7 +767,7 @@ body {
       right: -18px; }
       .pricing-card .covered-info a .flaticon-logo:before {
         font-size: 14px;
-        color: #11a075; }
+        color: #F86600; }
 
 .availability-info {
   font-style: italic;
@@ -762,7 +776,7 @@ body {
     font-size: 20px;
     font-weight: 400; }
     .availability-info p span {
-      color: #ff0000;
+      color: #F86600;
       font-size: 24px; }
 
 .pricing-btn {
@@ -770,13 +784,19 @@ body {
   margin-top: 30px; }
 
 .primary-btn {
-  border: 2px solid #ff0000;
-  background-color: #ff0000;
+  border: 2px solid #F86600;
+  background-color: #F86600;
   font-size: 14px; }
 
 footer {
-  background-color: #f9f9f9;
+  background-color: #f6f6f6;
   padding: 60px 0; }
+
+.footer-btn {
+  font-size: 14px;
+  background-color: #000;
+  border: 1px solid #000;
+  font-weight: 300; }
 
 .social {
   display: flex;
@@ -799,7 +819,7 @@ footer {
 
 .faqs-page {
   color: #333;
-  background-color: #f9f9f9;
+  background-color: #f6f6f6;
   padding: 175px 0 80px 0; }
   .faqs-page h2 {
     margin: 30px 0; }
@@ -812,6 +832,30 @@ footer {
     .faqs-page p b {
       font-weight: 700; }
 
+.about-page {
+  padding-top: 95px;
+  color: #333; }
+
+.team {
+  padding: 100px 0; }
+
+.team__member {
+  flex-direction: column; }
+  .team__member img {
+    height: 175px;
+    width: 175px;
+    border-radius: 50%; }
+  .team__member h3 {
+    margin-top: 16px;
+    font-weight: 400; }
+  .team__member .designation {
+    font-size: 20px;
+    margin: 8px 0;
+    font-weight: 400; }
+  .team__member p {
+    font-weight: 400;
+    font-size: 14px; }
+
 .apply-page {
   padding-top: 95px; }
 
@@ -822,11 +866,11 @@ footer {
   padding: 20px 80px;
   background-color: #fff; }
   .secondary-header a {
-    color: #ff0000; }
+    color: #F86600; }
 
 .location-page {
   color: #333;
-  background-color: #f9f9f9;
+  background-color: #f6f6f6;
   padding: 175px 0 80px 0; }
   .location-page ol {
     padding: 0 20px; }
@@ -845,12 +889,6 @@ footer {
     margin-top: 80px; }
     .location-page h1:first-child {
       margin-top: 0; }
-
-.footer-btn {
-  font-size: 14px;
-  background-color: #000;
-  border: 1px solid #000;
-  font-weight: 300; }
 
 .clearfix {
   *zoom: 1; }
@@ -994,17 +1032,18 @@ footer {
       text-align: center; }
       .menu li a {
         display: inline-block;
-        margin-bottom: 20px;
-        font-size: 30px;
+        margin-bottom: 0px;
+        font-size: 24px;
         font-weight: 700;
         color: #ff0000 !important;
         opacity: 0.1;
         transform: translateY(20px);
-        transition: all 350ms ease-in-out; }
+        transition: transform 500ms ease-in-out, opacity 1000ms ease-in-out; }
         .menu li a.cta-btn {
           color: #fff !important;
           font-weight: 300;
-          font-size: 14px; }
+          font-size: 14px;
+          margin-top: 20px; }
 
   #toggle:checked ~ .menu {
     position: absolute;
