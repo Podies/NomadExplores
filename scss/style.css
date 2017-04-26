@@ -535,15 +535,15 @@ body {
 @keyframes slide {
   0% {
     left: 0%; }
-  30% {
+  28% {
     left: 0%; }
-  35% {
+  33.33% {
     left: -100%; }
-  65% {
+  61.3333% {
     left: -100%; }
-  70% {
+  66.666% {
     left: -200%; }
-  95% {
+  100% {
     left: -200%; } }
 .hero-section__img {
   float: left; }
