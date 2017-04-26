@@ -1,6 +1,6 @@
     /*
     Flaticon icon font: Flaticon
-    Creation date: 20/04/2017 05:42
+    Creation date: 26/04/2017 08:22
     */
 
     @font-face {
@@ -36,32 +36,34 @@
   font-smoothing: antialiased;
     }
 
-    .flaticon-logo:before { content: "\f100"; }
-.flaticon-checked:before { content: "\f101"; }
-.flaticon-cancel:before { content: "\f102"; }
-.flaticon-social-1:before { content: "\f103"; }
-.flaticon-social-media:before { content: "\f104"; }
-.flaticon-social:before { content: "\f105"; }
-.flaticon-people-2:before { content: "\f106"; }
-.flaticon-people-1:before { content: "\f107"; }
-.flaticon-people:before { content: "\f108"; }
-.flaticon-logistics-delivery-truck-in-movement:before { content: "\f109"; }
-.flaticon-cutlery:before { content: "\f10a"; }
-.flaticon-furniture:before { content: "\f10b"; }
-.flaticon-workspace:before { content: "\f10c"; }
-.flaticon-computer:before { content: "\f10d"; }
+    .flaticon-linkedin-sign:before { content: "\f100"; }
+.flaticon-logo:before { content: "\f101"; }
+.flaticon-checked:before { content: "\f102"; }
+.flaticon-cancel:before { content: "\f103"; }
+.flaticon-social-1:before { content: "\f104"; }
+.flaticon-social-media:before { content: "\f105"; }
+.flaticon-social:before { content: "\f106"; }
+.flaticon-people-2:before { content: "\f107"; }
+.flaticon-people-1:before { content: "\f108"; }
+.flaticon-people:before { content: "\f109"; }
+.flaticon-logistics-delivery-truck-in-movement:before { content: "\f10a"; }
+.flaticon-cutlery:before { content: "\f10b"; }
+.flaticon-furniture:before { content: "\f10c"; }
+.flaticon-workspace:before { content: "\f10d"; }
+.flaticon-computer:before { content: "\f10e"; }
     
-    $font-Flaticon-logo: "\f100";
-    $font-Flaticon-checked: "\f101";
-    $font-Flaticon-cancel: "\f102";
-    $font-Flaticon-social-1: "\f103";
-    $font-Flaticon-social-media: "\f104";
-    $font-Flaticon-social: "\f105";
-    $font-Flaticon-people-2: "\f106";
-    $font-Flaticon-people-1: "\f107";
-    $font-Flaticon-people: "\f108";
-    $font-Flaticon-logistics-delivery-truck-in-movement: "\f109";
-    $font-Flaticon-cutlery: "\f10a";
-    $font-Flaticon-furniture: "\f10b";
-    $font-Flaticon-workspace: "\f10c";
-    $font-Flaticon-computer: "\f10d";
+    $font-Flaticon-linkedin-sign: "\f100";
+    $font-Flaticon-logo: "\f101";
+    $font-Flaticon-checked: "\f102";
+    $font-Flaticon-cancel: "\f103";
+    $font-Flaticon-social-1: "\f104";
+    $font-Flaticon-social-media: "\f105";
+    $font-Flaticon-social: "\f106";
+    $font-Flaticon-people-2: "\f107";
+    $font-Flaticon-people-1: "\f108";
+    $font-Flaticon-people: "\f109";
+    $font-Flaticon-logistics-delivery-truck-in-movement: "\f10a";
+    $font-Flaticon-cutlery: "\f10b";
+    $font-Flaticon-furniture: "\f10c";
+    $font-Flaticon-workspace: "\f10d";
+    $font-Flaticon-computer: "\f10e";

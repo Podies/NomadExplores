@@ -23,11 +23,11 @@ $(window).scroll(function() {
 			header.style.padding = "20px 6.25%";
 			logo1.style.display = "none";
 			logo2.style.display = "block";
-			link1.style.color = "#FF233B";
-			link2.style.color = "#FF233B";
-			link3.style.color = "#FF233B";
-			link4.style.color = "#FF233B";
-			link5.style.color = "#FF233B";
+			link1.style.color = "#FF8C00";
+			link2.style.color = "#FF8C00";
+			link3.style.color = "#FF8C00";
+			link4.style.color = "#FF8C00";
+			link5.style.color = "#FF8C00";
 		} else {
 			header.style.backgroundColor = "transparent";
 			header.style.padding = "0px 6.25%";
