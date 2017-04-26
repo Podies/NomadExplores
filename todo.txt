@@ -8,3 +8,9 @@
 8. Link social media.
 9. SEO
 10. Analytics - embed.
+
+
+1. Compress Images
+2. Responsive check colors
+3. FAQs content.
+4. Slider.
