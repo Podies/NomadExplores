@@ -1,3 +1,5 @@
+@import "vars";
+
 #toggle, .menu-icon {
   display: none;
 }
@@ -62,7 +64,7 @@
     height: 200px;
     width: 230px;
     h2 {
-      color: #ff0000;
+      color: $accent-color;
       font-weight: 400;
       font-size: 30px;
     }
@@ -108,7 +110,7 @@
   .hamburger-icon {
       width: 20px;
       height: 2px;
-      background: #ff0000;
+      background: $accent-color;
       transition: all 0.3s ease-in-out;
       margin-bottom: 5px;
     }
@@ -159,7 +161,7 @@
         margin-bottom: 0px;
         font-size: 24px;
         font-weight: 700;
-        color: #ff0000 !important;
+        color: $accent-color !important;
         opacity: 0.1;
         transform: translateY(20px);
         transition: transform 500ms ease-in-out, opacity 1000ms ease-in-out;
@@ -353,7 +355,7 @@
     height: 200px;
     width: 240px;
     h2 {
-      color: #ff0000;
+      color: $accent-color;
       font-weight: 400;
       font-size: 30px;
     }
@@ -363,7 +365,7 @@
     p {
       font-size: 16px;
       span {
-        color: #ff0000;
+        color: $accent-color;
         font-size: 20px;
       }
     }
