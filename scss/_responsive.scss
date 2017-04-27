@@ -77,7 +77,7 @@
   }
   .header {
     padding: 20px 6.25% !important;
-    background-color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.8) !important;
   }
   #logo1 {
     display: none !important;
@@ -260,6 +260,22 @@
       line-height: 24px;
     }
   }
+  .location{
+    figure {
+      padding-top: 90px;
+    }
+  }
+  .location-page {
+    margin-top: 0;
+  }
+  .where {
+    .row {
+      flex-direction: column;
+      .where__img {
+        order: -1;
+      }
+    }
+  }
 }
 
 @media all and (max-width: 460px) {
@@ -268,7 +284,7 @@
   }
   .header {
     padding: 8px 6.25% !important;
-    background-color: #fff !important;
+    background-color: rgba(255, 255, 255, 0.8) !important;
   }
   #logo2 {
     width: 60px;
@@ -381,14 +397,17 @@
       justify-content: center;
       align-items: center;
     }
+    .nav {
+      margin-top: 30px;
+    }
   }
   .social {
     justify-content: center;
-    order:2;
     margin-top: 30px;
   }
   .copyright-text {
     text-align: center;
+    order: -1;
   }
 
   .faqs-page {
@@ -401,22 +420,21 @@
       line-height: 21px;
     }
   }
+  .location{
+    figure {
+      padding-top: 49px;
+    }
+  }
   .location-page {
     ol {
       li{
-        font-size: 16px;
+        font-size: 14px;
         line-height: 24px;
       }
     }
     p {
-      font-size: 18px;
+      font-size: 14px;
       line-height: 27px;
-    }
-    h1 {
-      margin-top: 50px;
-      &:first-child {
-        margin-top: 0;
-      }
     }
   }
   .mouse {
