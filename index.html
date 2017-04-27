@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Remote Explorers</title>
-		<link rel="icon" href="images/RemoteExpressFavicon.png" type="image/png" sizes="16x16">
+		<link rel="icon" href="images/RemoteExplorersFavicon.png" type="image/png" sizes="16x16">
 		<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700|Lato" rel="stylesheet">
 		<link href="font/flaticon.css" rel="stylesheet">
 		<link href="scss/style.css" rel="stylesheet">
@@ -34,7 +34,7 @@
 					<header class="header" id="header">
 						<a href="../index.html">
 							<img src="./images/RemoteExpressLogoColoredWhite.png" class="logo" id="logo1" alt="" />
-							<img src="./images/RemoteExpressLogoWithoutText.png" class="logo" id="logo2" alt="" />
+							<img src="./images/RemoteExplorersLogoWithoutText.png" class="logo" id="logo2" alt="" />
 						</a>
 						<nav>
 							<input type="checkbox" id="toggle" />
@@ -45,10 +45,10 @@
 	            </label>
 							<ul class="nav-links menu">
 								<li><a href="/" id="link1" class="active">Home</a></li>
-								<li><a href="./location" id="link3">Where</a></li>
-								<li><a href="#" id="link4">Blog</a></li>
-								<li><a href="./faqs" id="link5" class="faqs">FAQs</a></li>
-								<li><a href="./about" id="link2">About</a></li>
+								<li><a href="./location" id="link2">Where</a></li>
+								<li><a href="https://blog.remoteexplorers.com/" target="_blank" id="link3">Blog</a></li>
+								<li><a href="./faqs" id="link4" class="faqs">FAQs</a></li>
+								<li><a href="./about" id="link5">About</a></li>
 								<li><a href="./apply" class="cta-btn">Apply</a></li>
 							</ul>
 						</nav>
@@ -323,12 +323,24 @@
 			<footer>
 				<div class="grid">
 					<div class="social col-md-4">
-						<a class="social__icon" href="#"><span class="flaticon-social" target="_blank"></span></a>
-						<a class="social__icon" href="#"><span class="flaticon-social-media" target="_blank"></span></a>
-						<a class="social__icon" href="#"><span class="flaticon-social-1" target="_blank"></span></a>
+						<a class="social__icon" href="https://www.facebook.com/remoteexplorers/" target="_blank"><span class="flaticon-social"></span></a>
+						<a class="social__icon" href="https://www.instagram.com/remote.explorers/" target="_blank"><span class="flaticon-social-media"></span></a>
+						<a class="social__icon" href="https://twitter.com/RemoteExplorers" target="_blank"><span class="flaticon-social-1"></span></a>
 					</div>
-					<div class="col-md-4 col-md-offset-4 col-xs-offset-0 col-sm-offset-0">
-						<p class="copyright-text">Remote Explorers © 2017</p>
+					<div class="col-md-4 copyright-text">
+						<p class="">Remote Explorers © 2017</p>
+					</div>
+					<div class="col-md-4">
+						<nav>
+							<ul class="nav">
+								<li><a href="/">Home</a></li>
+								<li><a href="./location">Where</a></li>
+								<li><a href="https://blog.remoteexplorers.com/" target="_blank" id="link3">Blog</a></li>
+								<li><a href="./faqs">FAQs</a></li>
+								<li><a href="./about">About</a></li>
+								<li><a href="./apply">Apply</a></li>
+							</ul>
+						</nav>
 					</div>
 				</div>
 			</footer>
@@ -355,7 +367,7 @@
 				      $('html, body').animate({
 				        scrollTop: $(hash).offset().top
 				      }, 800, function(){
-				   
+				
 				        // Add hash (#) to URL when done scrolling (default click behavior)
 				        window.location.hash = hash;
 				      });

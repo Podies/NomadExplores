@@ -4,6 +4,9 @@ $(window).scroll(function() {
 	$('.slide').css({
 		'transform' : 'translate(0px, '+ wScroll /20 +'%)'
 	});
+	$('.asia').css({
+		'transform' : 'translate(0px, '+ wScroll /15 +'%)'
+	});
 	$('.hero-text').css({
 		'transform' : 'translateY(0px, -'+ wScroll /20 +'%)'
 	});
@@ -19,15 +22,15 @@ $(window).scroll(function() {
 		link5 = document.getElementById('link5');
 		yPos = window.pageYOffset;
 		if (yPos > 165) {
-			header.style.backgroundColor = "#fff";
+			header.style.backgroundColor = "rgba(255, 255, 255, 0.8)";
 			header.style.padding = "20px 6.25%";
 			logo1.style.display = "none";
 			logo2.style.display = "block";
-			link1.style.color = "#FF8C00";
-			link2.style.color = "#FF8C00";
-			link3.style.color = "#FF8C00";
-			link4.style.color = "#FF8C00";
-			link5.style.color = "#FF8C00";
+			link1.style.color = "#F86600";
+			link2.style.color = "#F86600";
+			link3.style.color = "#F86600";
+			link4.style.color = "#F86600";
+			link5.style.color = "#F86600";
 		} else {
 			header.style.backgroundColor = "transparent";
 			header.style.padding = "0px 6.25%";
