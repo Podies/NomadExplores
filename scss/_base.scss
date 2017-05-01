@@ -22,7 +22,7 @@ time, mark, audio, video {
 }
 
 *,html,body {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 h1 {
@@ -73,10 +73,10 @@ h1, h2, h3, h4, h5, h6 {
   text-align: left;
 }
 body {
-	font-family: $font-family-text, sans-serif;
-	color: #fff;
-	font-weight: 300;
-	font-size: 14px;
+  font-family: $font-family-text, sans-serif;
+  color: #fff;
+  font-weight: 300;
+  font-size: 14px;
 }
 .img-responsive {
   display: inline-block;

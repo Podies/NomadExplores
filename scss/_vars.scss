@@ -3,7 +3,7 @@ $font-color: #fff;
 $font-family-header: 'Raleway';
 $font-family-text: 'Lato';
 
-$browser-context: 16px; // Default
+$browser-context: 16px; /* Default*/
 
 @function em($pixels, $context: $browser-context) {
   @return #{$pixels/$context}em;
@@ -23,19 +23,26 @@ $browser-context: 16px; // Default
 }
 
 %flex-between {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 %center {
-	position: absolute;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 %primary-btn {
-	padding: 10px 30px;
+  padding: 10px 30px;
   border-radius: 40px;
   color: #fff;
   cursor: pointer;
