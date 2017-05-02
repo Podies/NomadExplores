@@ -287,25 +287,13 @@
     }
   }
   .location{
-    figure {
+    height: 1200px;
+    .asia {
       padding-top: 90px;
     }
   }
-  .location-page {
-    margin-top: 0;
-  }
   .where {
-    .row {
-      -webkit-box-orient: vertical;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      .where__img {
-        -webkit-box-ordinal-group: 0;
-            -ms-flex-order: -1;
-                order: -1;
-      }
-    }
+    flex-direction: column;
   }
 }
 
@@ -463,7 +451,7 @@
     }
   }
   .location{
-    figure {
+    .asia {
       padding-top: 49px;
     }
   }

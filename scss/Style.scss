@@ -601,21 +601,23 @@
   position: relative;
   height: 800px;
   background: beige;
-  // z-index: -1;
-  .asia {
-    position: relative;
-    // z-index: -1000;
-  }
+}
+.where {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0;
 }
 .location-text{
-  position: relative;
-  z-index: 1;
-  color: #666;
-  font-size: 20px;
-  padding: 100px 0;
-  background:#fff;
+  padding: 0 60px;
+  // width: 50%;
+  color: #333;
+  font-size: 18px;
   font-weight: 100;
-  height: 100%;
   p {
     font-size: 18px;
     margin-top: 10px;
@@ -625,6 +627,16 @@
     list-style: decimal;
     line-height: 30px;
   }
+}
+.why-india {
+  // right: 0;
+}
+.why-mcleod {
+  // left: 0;
+}
+iframe {
+  position: relative;
+  z-index: 1;
 }
 
 /* =============================================*/
