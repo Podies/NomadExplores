@@ -738,9 +738,10 @@ body {
   font-weight: 300; }
 
 .about-text__2 {
-  margin-top: 30px;
-  font-size: 20px;
-  line-height: 30px; }
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 27px;
+  font-style: italic; }
 
 /* =============================================*/
 /* Activities*/
@@ -960,6 +961,43 @@ body {
     font-size: 24px;
     color: #000; }
 
+.contact-us {
+  background: beige;
+  padding: 120px 0; }
+  .contact-us .form-control {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    font-size: 16px; }
+    .contact-us .form-control:focus {
+      outline-offset: -1px;
+      outline: #F86600 auto 3px; }
+  .contact-us textarea {
+    width: 100%;
+    height: 100%; }
+  .contact-us .submit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .contact-us .submit-btn .form-control {
+      margin-bottom: 0;
+      width: 120px;
+      margin-right: 20px;
+      border-radius: 20px;
+      outline: 0;
+      border: 2px solid #F86600;
+      color: #F86600;
+      transition: all 250ms ease-in-out;
+      box-shadow: none;
+      cursor: pointer;
+      background: #fff; }
+      .contact-us .submit-btn .form-control:hover {
+        background: #F86600;
+        color: #fff; }
+      .contact-us .submit-btn .form-control:last-child {
+        margin-right: 0; }
+
 /* =============================================*/
 /* Apply*/
 /* =============================================*/
@@ -979,24 +1017,28 @@ body {
 /* Location Page*/
 /* =============================================*/
 .location {
-  height: 800px; }
-  .location .asia-map {
-    position: absolute;
-    z-index: -1; }
-  .location .location-text {
-    color: #f9f9f9;
-    font-size: 20px;
-    background: rgba(0, 0, 0, 0.4);
-    font-weight: 100;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .location .location-text .heading-text {
-      color: #f9f9f9; }
-    .location .location-text p {
-      font-size: 18px;
-      margin-top: 10px; }
+  position: relative;
+  height: 800px;
+  background: beige; }
+  .location .asia {
+    position: relative; }
+
+.location-text {
+  position: relative;
+  z-index: 1;
+  color: #666;
+  font-size: 20px;
+  padding: 100px 0;
+  background: #fff;
+  font-weight: 100;
+  height: 100%; }
+  .location-text p {
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 27px; }
+  .location-text ol li {
+    list-style: decimal;
+    line-height: 30px; }
 
 /* =============================================*/
 /* Footer*/

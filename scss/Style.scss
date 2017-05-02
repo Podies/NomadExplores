@@ -260,9 +260,10 @@
   font-weight: 300;
 }
 .about-text__2 {
-  margin-top: 30px;
-  font-size: 20px;
-  line-height: 30px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 27px;
+  font-style: italic;
 }
 
 /* =============================================*/
@@ -527,6 +528,51 @@
     }
   }
 }
+.contact-us {
+  background: beige;
+  padding: 120px 0;
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: 10px 12px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    &:focus {
+    outline-offset: -1px;
+    outline: $accent-color auto 3px;
+    }
+  }
+  textarea {
+    width: 100%;
+    height: 100%;
+  }
+  .submit-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .form-control {
+      margin-bottom: 0;
+      width: 120px;
+      margin-right: 20px;
+      border-radius: 20px;
+      outline: 0;
+      border: 2px solid $accent-color;
+      color: $accent-color;
+      transition: all 250ms ease-in-out;
+      box-shadow: none;
+      cursor: pointer;
+      &:hover {
+        background: $accent-color;
+        color: #fff;
+      }
+      // padding: 10px 40px;
+      background: #fff;
+      &:last-child{
+        margin-right: 0;
+      }
+    }
+  }
+}
 
 /* =============================================*/
 /* Apply*/
@@ -550,27 +596,32 @@
 /* Location Page*/
 /* =============================================*/
 .location{
+  position: relative;
   height: 800px;
-  .asia-map {
-    position: absolute;
-    z-index: -1;
+  background: beige;
+  // z-index: -1;
+  .asia {
+    position: relative;
+    // z-index: -1000;
   }
-  .location-text{
-    color: #f9f9f9;
-    font-size: 20px;
-    background:rgba(0,0,0, 0.4);
-    font-weight: 100;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .heading-text {
-      color: #f9f9f9;
-    }
-    p {
-      font-size: 18px;
-      margin-top: 10px;
-    }
+}
+.location-text{
+  position: relative;
+  z-index: 1;
+  color: #666;
+  font-size: 20px;
+  padding: 100px 0;
+  background:#fff;
+  font-weight: 100;
+  height: 100%;
+  p {
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 27px;
+  }
+  ol li{
+    list-style: decimal;
+    line-height: 30px;
   }
 }
 
