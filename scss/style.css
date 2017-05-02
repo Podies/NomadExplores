@@ -969,9 +969,11 @@ body {
     width: 100%;
     padding: 10px 12px;
     margin-bottom: 20px;
-    font-size: 16px; }
+    font-size: 16px;
+    border: 1px solid #9c9c9c; }
     .contact-us .form-control:focus {
       outline-offset: -1px;
+      border-radius: 4px;
       outline: #F86600 auto 3px; }
   .contact-us textarea {
     width: 100%;
