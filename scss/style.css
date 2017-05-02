@@ -1022,18 +1022,22 @@ body {
   position: relative;
   height: 800px;
   background: beige; }
-  .location .asia {
-    position: relative; }
+
+.where {
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0; }
 
 .location-text {
-  position: relative;
-  z-index: 1;
-  color: #666;
-  font-size: 20px;
-  padding: 100px 0;
-  background: #fff;
-  font-weight: 100;
-  height: 100%; }
+  padding: 0 60px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 100; }
   .location-text p {
     font-size: 18px;
     margin-top: 10px;
@@ -1041,6 +1045,10 @@ body {
   .location-text ol li {
     list-style: decimal;
     line-height: 30px; }
+
+iframe {
+  position: relative;
+  z-index: 1; }
 
 /* =============================================*/
 /* Footer*/
@@ -1377,21 +1385,13 @@ footer {
     font-size: 16px;
     line-height: 24px; }
 
-  .location figure {
-    padding-top: 90px; }
+  .location {
+    height: 1200px; }
+    .location .asia {
+      padding-top: 90px; }
 
-  .location-page {
-    margin-top: 0; }
-
-  .where .row {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-    .where .row .where__img {
-      -webkit-box-ordinal-group: 0;
-      -ms-flex-order: -1;
-      order: -1; } }
+  .where {
+    flex-direction: column; } }
 @media all and (max-width: 460px) {
   .grid {
     padding: 0 20px; }
@@ -1523,7 +1523,7 @@ footer {
     font-size: 14px;
     line-height: 21px; }
 
-  .location figure {
+  .location .asia {
     padding-top: 49px; }
 
   .location-page ol li {
