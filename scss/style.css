@@ -915,7 +915,7 @@ body {
 .faqs-page {
   color: #333;
   background-color: #f5f5dc;
-  padding: 175px 0 80px 0; }
+  padding: 135px 0 60px 0; }
   .faqs-page h3 {
     margin: 15px 0 10px 0;
     font-weight: 400;
@@ -928,6 +928,9 @@ body {
     font-weight: 300;
     color: #666;
     text-align: justify; }
+    .faqs-page p a {
+      display: inline-block;
+      color: blue; }
 
 /* =============================================*/
 /* About Page*/
@@ -1046,7 +1049,7 @@ body {
 
 .secondary-header {
   padding: 20px 80px;
-  background: rgba(255, 255, 255, 0.8); }
+  background: white; }
   .secondary-header a {
     color: #F86600; }
 
@@ -1592,12 +1595,15 @@ footer {
     -ms-flex-order: -1;
     order: -1; }
 
-  .faqs-page h2 {
-    margin: 14px 0;
-    font-size: 20px; }
-  .faqs-page p {
-    font-size: 14px;
-    line-height: 21px; }
+  .faqs-page {
+    padding: 100px 0 30px 0; }
+    .faqs-page h3 {
+      margin: 14px 0;
+      font-size: 18px;
+      line-height: 24px; }
+    .faqs-page p {
+      font-size: 14px;
+      line-height: 21px; }
 
   .location .asia {
     padding-top: 49px; }
