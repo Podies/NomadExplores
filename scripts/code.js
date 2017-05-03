@@ -22,7 +22,7 @@ $(window).scroll(function() {
 		link5 = document.getElementById('link5');
 		yPos = window.pageYOffset;
 		if (yPos > 165) {
-			header.style.backgroundColor = "rgba(255, 255, 255, 0.8)";
+			header.style.backgroundColor = "#fff";
 			header.style.padding = "20px 6.25%";
 			logo1.style.display = "none";
 			logo2.style.display = "block";

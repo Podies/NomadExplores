@@ -238,7 +238,7 @@
 .about-section{
   position: relative;
   background-color: #f5f5dc;
-  height: 600px;
+  height: 500px;
 }
 
 .about-text {
@@ -321,10 +321,7 @@
   background-color: #f5f5dc;
   text-align: center;
   color: #333;
-  padding: 140px 0 80px 0;
-  .row:last-child {
-    margin-top: 60px;
-  }
+  padding: 60px 0 60px 0;
   h1 {
     margin-bottom: 60px;
   }

@@ -718,7 +718,7 @@ body {
 .about-section {
   position: relative;
   background-color: #f5f5dc;
-  height: 600px; }
+  height: 500px; }
 
 .about-text {
   text-align: justify;
@@ -790,9 +790,7 @@ body {
   background-color: #f5f5dc;
   text-align: center;
   color: #333;
-  padding: 140px 0 80px 0; }
-  .facilities .row:last-child {
-    margin-top: 60px; }
+  padding: 60px 0 60px 0; }
   .facilities h1 {
     margin-bottom: 60px; }
   .facilities p {
@@ -1244,7 +1242,7 @@ footer {
 
   .header {
     padding: 20px 6.25% !important;
-    background-color: rgba(255, 255, 255, 0.8) !important; }
+    background-color: white !important; }
 
   #logo1 {
     display: none !important; }
@@ -1466,7 +1464,7 @@ footer {
 
   .header {
     padding: 8px 6.25% !important;
-    background-color: rgba(255, 255, 255, 0.8) !important; }
+    background-color: white !important; }
 
   #logo2 {
     width: 60px; }
