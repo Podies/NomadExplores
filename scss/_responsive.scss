@@ -287,13 +287,24 @@
     }
   }
   .location{
-    height: 1200px;
     .asia {
       padding-top: 90px;
     }
   }
   .where {
-    flex-direction: column;
+    padding: 50px 0;
+  }
+  .location-text{
+    color: #666;
+    font-size: 18px;
+    line-height: 27px;
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+  .mouse {
+    display: none;
   }
 }
 
@@ -467,7 +478,16 @@
       line-height: 27px;
     }
   }
-  .mouse {
-    display: none;
+  .where {
+    padding: 10px 0;
+  }
+  .location-text{
+    color: #666;
+    font-size: 14px;
+    line-height: 21px;
+    p {
+      font-size: 14px;
+      line-height: 21px;
+    }
   }
 }
