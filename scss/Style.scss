@@ -421,20 +421,19 @@
     position: relative;
     list-style: inherit;
     a {
-      position: absolute;
-      top: -5px;
-      right: -18px;
+      color: #0f3443;
+      &:hover {
+        color: $accent-color;
+      }
       .flaticon-logo:before {
+        position: absolute;
         font-size: 14px;
         color: #0f3443;
+        top: -5px;
+        right: -18px;
       }
     }
   }
-}
-.price-tag {
-  /* display: flex;*/
-  /* align-items: center;*/
-  /* justify-content: center;*/
 }
 .availability-info {
   font-style: italic;
@@ -442,7 +441,6 @@
   p {
     font-size: 20px;
     font-weight: 400;
-    /* font-family: 'raleway';*/
     color: #333;
     span {
       color: $accent-color;
