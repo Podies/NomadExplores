@@ -274,7 +274,8 @@
   .comma1 {
     left: 0px;
     top: -20px;
-    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
   }
   .comma2 {
     right: 0px;
@@ -321,7 +322,7 @@
   background-color: #f5f5dc;
   text-align: center;
   color: #333;
-  padding: 60px 0 60px 0;
+  padding: 85px 0 60px 0;
   h1 {
     margin-bottom: 60px;
   }
@@ -499,7 +500,7 @@
 .about-us {
   background:beige;
   position: relative;
-  height: 550px;
+  height: 330px;
   article {
     @extend %center;
     width: 75%;
@@ -543,6 +544,7 @@
     font-size: 14px;
     color: #666;
     line-height: 21px;
+    text-align: justify;
   }
   .about-member {
     margin: 20px 0 0px 0;
@@ -559,8 +561,12 @@
     }
   }
   .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     .flaticon-social:before, .flaticon-social-media:before, .flaticon-linkedin-sign:before {
       font-size: 24px;
       color: #000;
@@ -573,7 +579,7 @@
 }
 .contact-us {
   background: beige;
-  padding: 120px 0;
+  padding: 40px 0;
   .form-control {
     display: block;
     width: 100%;
@@ -592,9 +598,15 @@
     height: 100%;
   }
   .submit-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     .form-control {
       margin-bottom: 0;
       width: 120px;
@@ -603,6 +615,7 @@
       outline: 0;
       border: 2px solid $accent-color;
       color: $accent-color;
+      -webkit-transition: all 250ms ease-in-out;
       transition: all 250ms ease-in-out;
       box-shadow: none;
       cursor: pointer;
@@ -610,7 +623,7 @@
         background: $accent-color;
         color: #fff;
       }
-      // padding: 10px 40px;
+      /* padding: 10px 40px;*/
       background: #fff;
       &:last-child{
         margin-right: 0;
