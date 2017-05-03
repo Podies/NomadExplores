@@ -1024,27 +1024,30 @@ body {
   background: beige; }
 
 .where {
-  position: absolute;
-  width: 100%;
-  z-index: 100;
+  position: relative;
+  background: #fff;
+  z-index: 1;
   bottom: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 60px 0; }
+  padding: 120px 0; }
 
 .location-text {
-  padding: 0 60px;
-  color: #333;
-  font-size: 18px;
-  font-weight: 100; }
+  color: #666;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 30px;
+  padding: 0 30px; }
   .location-text p {
     font-size: 18px;
     margin-top: 10px;
     line-height: 27px; }
-  .location-text ol li {
-    list-style: decimal;
-    line-height: 30px; }
+    .location-text p a {
+      color: blue;
+      font-style: italic;
+      display: inline; }
+      .location-text p a:hover {
+        color: #F86600; }
+  .location-text li {
+    list-style: inherit; }
 
 iframe {
   position: relative;
