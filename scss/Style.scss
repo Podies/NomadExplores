@@ -422,10 +422,12 @@
     list-style: inherit;
     a {
       color: #0f3443;
-      &:hover {
+      transition: all 250ms ease-in-out;
+      &:hover, &:hover .flaticon-logo:before {
         color: $accent-color;
       }
       .flaticon-logo:before {
+        transition: all 250ms ease-in-out;
         position: absolute;
         font-size: 14px;
         color: #0f3443;

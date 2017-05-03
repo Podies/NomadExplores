@@ -876,10 +876,12 @@ body {
     position: relative;
     list-style: inherit; }
     .pricing-card .covered-info a {
-      color: #0f3443; }
-      .pricing-card .covered-info a:hover {
+      color: #0f3443;
+      transition: all 250ms ease-in-out; }
+      .pricing-card .covered-info a:hover, .pricing-card .covered-info a:hover .flaticon-logo:before {
         color: #F86600; }
       .pricing-card .covered-info a .flaticon-logo:before {
+        transition: all 250ms ease-in-out;
         position: absolute;
         font-size: 14px;
         color: #0f3443;
