@@ -400,7 +400,7 @@
   -ms-flex-align: center;
   align-items: center; }
 
-.hero-text, .about-text, .activity-card__title p, .icon-container span, .pricing-card .pricing-content {
+.hero-text, .about-text, .activity-card__title p, .icon-container span, .pricing-card .pricing-content, .about-us article {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -512,7 +512,7 @@ body {
   -ms-flex-align: center;
   align-items: center; }
 
-.hero-text, .about-text, .activity-card__title p, .icon-container span, .pricing-card .pricing-content {
+.hero-text, .about-text, .activity-card__title p, .icon-container span, .pricing-card .pricing-content, .about-us article {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -735,13 +735,26 @@ body {
 .about-text__1 {
   font-size: 20px;
   line-height: 30px;
-  font-weight: 300; }
+  font-weight: 300;
+  margin-top: 10px; }
 
 .about-text__2 {
-  margin-bottom: 20px;
-  font-size: 18px;
-  line-height: 27px;
-  font-style: italic; }
+  font-size: 28px;
+  line-height: 45px;
+  font-style: italic;
+  position: relative;
+  display: inline-block;
+  padding: 0 40px;
+  margin-bottom: 50px; }
+  .about-text__2 .comma {
+    position: absolute; }
+  .about-text__2 .comma1 {
+    left: 0px;
+    top: -20px;
+    transform: rotate(180deg); }
+  .about-text__2 .comma2 {
+    right: 0px;
+    bottom: -20px; }
 
 /* =============================================*/
 /* Activities*/
@@ -925,8 +938,24 @@ body {
   padding-top: 95px;
   color: #333; }
 
+.about-us {
+  background: beige;
+  position: relative;
+  height: 550px; }
+  .about-us article {
+    width: 75%; }
+    .about-us article p {
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 300;
+      text-align: justify; }
+
 .team {
   padding: 100px 0; }
+
+.member-info {
+  min-height: 550px;
+  position: relative; }
 
 .team__member {
   -webkit-box-orient: vertical;
@@ -956,10 +985,18 @@ body {
       display: inline-block; }
   .team__member address p {
     font-size: 18px;
-    margin: 20px 0; }
-  .team__member .social .flaticon-social:before, .team__member .social .flaticon-social-media:before, .team__member .social .flaticon-linkedin-sign:before {
-    font-size: 24px;
-    color: #000; }
+    margin: 20px 0;
+    text-align: center; }
+  .team__member .social {
+    display: flex;
+    justify-content: center; }
+    .team__member .social .flaticon-social:before, .team__member .social .flaticon-social-media:before, .team__member .social .flaticon-linkedin-sign:before {
+      font-size: 24px;
+      color: #000; }
+
+.member-info__contact {
+  position: absolute;
+  bottom: 0; }
 
 .contact-us {
   background: beige;
@@ -1125,7 +1162,7 @@ footer {
   -ms-flex-align: center;
   align-items: center; }
 
-.hero-text, .about-text, .activity-card__title p, .icon-container span, .pricing-card .pricing-content {
+.hero-text, .about-text, .activity-card__title p, .icon-container span, .pricing-card .pricing-content, .about-us article {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -1151,6 +1188,9 @@ footer {
   .activity-card__title p {
     font-size: 20px;
     text-align: center; } }
+@media all and (max-width: 1000px) {
+  .member-info {
+    min-height: 630px; } }
 @media all and (max-width: 960px) {
   .grid {
     padding: 0 30px; }
@@ -1182,7 +1222,6 @@ footer {
     line-height: 30px; }
 
   .about-text__2 {
-    margin-top: 24px;
     font-size: 20px;
     line-height: 30px; }
 
@@ -1341,8 +1380,7 @@ footer {
 
   .about-text__2 {
     font-size: 18px;
-    line-height: 27px;
-    margin-top: 20px; }
+    line-height: 27px; }
 
   .activity-card__title p {
     font-size: 24px;
@@ -1403,7 +1441,25 @@ footer {
       line-height: 24px; }
 
   .mouse {
-    display: none; } }
+    display: none; }
+
+  .member-info {
+    min-height: 500px;
+    position: relative;
+    margin-bottom: 30px; }
+
+  .about-us {
+    height: 400px; }
+    .about-us article {
+      width: 75%; }
+      .about-us article p {
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 300; } }
+@media all and (max-width: 600px) {
+  .member-info {
+    min-height: 550px;
+    position: relative; } }
 @media all and (max-width: 460px) {
   .grid {
     padding: 0 20px; }
@@ -1415,29 +1471,28 @@ footer {
   #logo2 {
     width: 60px; }
 
-  .hero-text .hero-text__1 {
-    font-size: 16px;
-    line-height: 24px; }
-    .hero-text .hero-text__1 span:last-child {
-      font-size: 20px;
-      line-height: 30px; }
-  .hero-text .hero-text__location {
-    font-size: 14px;
-    line-height: 21px; }
-  .hero-text .hero-text__2 {
-    font-size: 12px;
-    line-height: 18px;
-    margin: 16px 0; }
-  .hero-text time {
-    font-size: 12px; }
+  .hero-text {
+    padding-top: 32px; }
+    .hero-text .hero-text__1 {
+      font-size: 16px;
+      line-height: 24px; }
+      .hero-text .hero-text__1 span:last-child {
+        font-size: 20px;
+        line-height: 30px; }
+    .hero-text .hero-text__location {
+      font-size: 14px;
+      line-height: 21px; }
+    .hero-text .hero-text__2 {
+      font-size: 12px;
+      line-height: 18px;
+      margin: 16px 0; }
+    .hero-text time {
+      font-size: 12px; }
 
   .heading-text {
     font-size: 24px;
     line-height: 45px;
     margin-bottom: 20px; }
-
-  .about-section {
-    height: 500px; }
 
   .about-text__1 {
     font-size: 14px;
@@ -1445,7 +1500,8 @@ footer {
 
   .about-text__2 {
     font-size: 14px;
-    line-height: 21px; }
+    line-height: 21px;
+    margin-bottom: 30px; }
 
   .activity-card__title p {
     font-size: 18px;
@@ -1499,6 +1555,13 @@ footer {
   .primary-btn {
     font-size: 12px;
     padding: 6px 16px; }
+
+  .about-us {
+    height: 400px; }
+    .about-us article p {
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 300; }
 
   footer {
     padding: 60px 0; }
@@ -1554,6 +1617,10 @@ footer {
     line-height: 21px; }
     .location-text p {
       font-size: 14px;
-      line-height: 21px; } }
+      line-height: 21px; }
+
+  .member-info {
+    min-height: 630px;
+    position: relative; } }
 
 /*# sourceMappingURL=style.css.map */

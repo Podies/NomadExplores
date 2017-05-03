@@ -11,6 +11,11 @@
     }
   }
 }
+@media all and (max-width: 1000px) {
+  .member-info {
+    min-height: 630px;
+  }
+}
 @media all and (max-width: 960px) {
   .grid {
     padding: 0 30px;
@@ -48,7 +53,6 @@
     line-height: 30px;
   }
   .about-text__2 {
-    margin-top: 24px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -229,7 +233,6 @@
   .about-text__2 {
     font-size: 18px;
     line-height: 27px;
-    margin-top: 20px;
   }
   .activity-card__title {
     p {
@@ -306,8 +309,29 @@
   .mouse {
     display: none;
   }
+  .member-info {
+    min-height: 500px;
+    position: relative;
+    margin-bottom: 30px;
+  }
+  .about-us {
+    height: 400px;
+    article {
+      width: 75%;
+      p{
+        font-size: 18px;
+        line-height: 27px;
+        font-weight: 300;
+      }
+    }
+  }
 }
-
+@media all and (max-width: 600px) {
+  .member-info {
+    min-height: 550px;
+    position: relative;
+  }
+}
 @media all and (max-width: 460px) {
   .grid {
     padding: 0 20px;
@@ -320,6 +344,7 @@
     width: 60px;
   }
   .hero-text {
+    padding-top: 32px;
     .hero-text__1 {
       font-size: 16px;
       line-height: 24px;
@@ -346,9 +371,6 @@
     line-height: 45px;
     margin-bottom: 20px;
   }
-  .about-section{
-    height: 500px;
-  }
   .about-text__1 {
     font-size: 14px;
     line-height: 21px;
@@ -356,6 +378,7 @@
   .about-text__2 {
     font-size: 14px;
     line-height: 21px;
+    margin-bottom: 30px;
   }
   .activity-card__title {
     p {
@@ -419,6 +442,16 @@
   .primary-btn {
     font-size: 12px;
     padding: 6px 16px;
+  }
+  .about-us {
+    height: 400px;
+    article {
+      p{
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 300;
+      }
+    }
   }
   footer {
     padding: 60px 0;
@@ -489,5 +522,9 @@
       font-size: 14px;
       line-height: 21px;
     }
+  }
+  .member-info {
+    min-height: 630px;
+    position: relative;
   }
 }

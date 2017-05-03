@@ -258,12 +258,28 @@
   font-size: 20px;
   line-height: 30px;
   font-weight: 300;
+  margin-top: 10px;
 }
 .about-text__2 {
-  margin-bottom: 20px;
-  font-size: 18px;
-  line-height: 27px;
+  font-size: 28px;
+  line-height: 45px;
   font-style: italic;
+  position: relative;
+  display: inline-block;
+  padding: 0 40px;
+  margin-bottom: 50px;
+  .comma{
+    position: absolute;
+  }
+  .comma1 {
+    left: 0px;
+    top: -20px;
+    transform: rotate(180deg);
+  }
+  .comma2 {
+    right: 0px;
+    bottom: -20px;
+  }
 }
 
 /* =============================================*/
@@ -479,8 +495,27 @@
   padding-top: 95px;
   color: #333;
 }
+.about-us {
+  background:beige;
+  position: relative;
+  height: 550px;
+  article {
+    @extend %center;
+    width: 75%;
+    p{
+      font-size: 20px;
+      line-height: 30px;
+      font-weight: 300;
+      text-align: justify;
+    }
+  }
+}
 .team {
   padding: 100px 0;
+}
+.member-info {
+  min-height: 550px;
+  position: relative;
 }
 .team__member {
   @extend %flex-between;
@@ -519,14 +554,21 @@
     p {
       font-size: 18px;
       margin: 20px 0;
+      text-align: center;
     }
   }
   .social {
+    display: flex;
+    justify-content: center;
     .flaticon-social:before, .flaticon-social-media:before, .flaticon-linkedin-sign:before {
       font-size: 24px;
       color: #000;
     }
   }
+}
+.member-info__contact {
+  position: absolute;
+  bottom: 0;
 }
 .contact-us {
   background: beige;
