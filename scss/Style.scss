@@ -580,6 +580,7 @@
 .contact-us {
   background: beige;
   padding: 40px 0;
+  color: #333;
   .form-control {
     display: block;
     width: 100%;
@@ -629,6 +630,14 @@
         margin-right: 0;
       }
     }
+  }
+  h3 {
+    margin: 20px 0;
+    font-weight: 400;
+  }
+  p {
+    font-weight: 400;
+    font-size: 20px;
   }
 }
 
