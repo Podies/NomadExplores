@@ -20,6 +20,7 @@ $(window).scroll(function() {
 		link3 = document.getElementById('link3');
 		link4 = document.getElementById('link4');
 		link5 = document.getElementById('link5');
+		link6 = document.getElementById('link6');
 		yPos = window.pageYOffset;
 		if (yPos > 165) {
 			header.style.backgroundColor = "#fff";
@@ -31,6 +32,7 @@ $(window).scroll(function() {
 			link3.style.color = "#F86600";
 			link4.style.color = "#F86600";
 			link5.style.color = "#F86600";
+			link6.style.color = "#F86600";
 		} else {
 			header.style.backgroundColor = "transparent";
 			header.style.padding = "0px 6.25%";
@@ -41,6 +43,7 @@ $(window).scroll(function() {
 			link3.style.color = "#fff";
 			link4.style.color = "#fff";
 			link5.style.color = "#fff";
+			link6.style.color = "#fff";
 		}
 	}
 	window.addEventListener("scroll", yScroll);

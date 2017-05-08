@@ -91,7 +91,7 @@
 .nav-links {
   @extend %flex-between;
   li {
-    margin-right: 50px;
+    margin-right: 40px;
     &:last-child {
       margin-right: 0;
     }
@@ -640,6 +640,18 @@
     font-size: 20px;
   }
 }
+
+/* =============================================*/
+/* Apply*/
+/* =============================================*/
+.partners {
+  background-color: beige;
+  padding: 95px 0;
+  img {
+    height: 170px;
+  }
+}
+
 
 /* =============================================*/
 /* Apply*/
