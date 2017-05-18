@@ -1083,21 +1083,6 @@ body {
     padding: 8px;
     margin: 8px; }
 
-.lightbox {
-  visibility: hidden;
-  position: fixed;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  z-index: 100;
-  background: rgba(0, 0, 0, 0.6);
-  opacity: 0;
-  transition: opacity 350ms ease-in-out; }
-
-.lightbox:target {
-  visibility: visible;
-  opacity: 1; }
-
 .outer {
   background: #fff;
   box-shadow: 0 0 35px black;
@@ -1128,10 +1113,9 @@ body {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-size: 36px;
     transition: all 350ms ease-in-out; }
-    .inner .arrow:hover {
-      background: rgba(0, 0, 0, 0.4); }
+    .inner .arrow img {
+      width: 60px; }
   .inner .next {
     right: 0; }
 
