@@ -389,7 +389,7 @@
   .col-xs-offset-12 {
     margin-left: 100%; } }
 /* Default*/
-.header, .nav-links, .team__member, .inner .image-header, footer .grid {
+.header, .nav-links, .team__member, footer .grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -501,7 +501,7 @@ body {
   height: auto; }
 
 /* Default*/
-.header, .nav-links, .team__member, .inner .image-header, footer .grid {
+.header, .nav-links, .team__member, footer .grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1079,45 +1079,17 @@ body {
   position: relative;
   background-color: beige;
   padding: 95px 0; }
-  .gallery .pad {
-    padding: 8px;
-    margin: 8px; }
 
-.outer {
-  background: #fff;
-  box-shadow: 0 0 35px black;
-  width: 100%;
-  width: 1000px;
-  margin: auto;
-  padding: 20px;
-  margin-top: 80px; }
+.img-card {
+  overflow: hidden;
+  margin: 16px; }
 
-.inner {
-  position: relative; }
-  .inner .image-header {
-    padding: 5px 0 20px 0;
-    font-size: 20px;
-    font-weight: 400; }
-    .inner .image-header a {
-      color: #666;
-      transition: color 350ms ease-in-out; }
-      .inner .image-header a:hover {
-        color: red; }
-  .inner .arrow {
-    position: absolute;
-    top: 49px;
-    bottom: 0;
-    width: 100px;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    transition: all 350ms ease-in-out; }
-    .inner .arrow img {
-      width: 60px; }
-  .inner .next {
-    right: 0; }
+.example-image {
+  border-radius: 4px;
+  transition: all 250ms ease-in-out; }
+  .example-image:hover {
+    opacity: 0.7;
+    transform: scale(1.1); }
 
 /* =============================================*/
 /* Apply*/
@@ -1237,7 +1209,7 @@ footer {
 /* Responsive*/
 /* =============================================*/
 /* Default*/
-.header, .nav-links, .team__member, .inner .image-header, footer .grid {
+.header, .nav-links, .team__member, footer .grid {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
