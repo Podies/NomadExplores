@@ -598,36 +598,71 @@ body {
       display: none; }
 
 .hero-section {
-  padding-top: 95px; }
+  margin-top: 95px; }
 
 .hero-text {
-  flex: 6;
   text-align: center;
   font-weight: 700;
-  color: #F86600; }
+  padding: 90px 200px;
+  background: white;
+  color: #F86600;
+}
   .hero-text .hero-text__1 {
     font-size: 36px;
-    line-height: 60px; }
+    line-height: 40px;
+    color: #F86600;
+  }
   .hero-text .hero-text__location {
     font-size: 20px;
     font-style: italic;
     line-height: 36px;
-    font-weight: 400; }
+    font-weight: 400;
+  }
   .hero-text .hero-text__2 {
-    font-size: 22px;
-    line-height: 36px;
+    font-size: 12px;
+    line-height: 20px;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    margin: 30px 0;
-    color: #F86600; }
-  .hero-text time {
-    font-size: 18px; }
+    margin: 10px 0;
+    color: #ababab; 
+  }
+  .hero-text .hero-text__3 {
+    color: #F86600;
+    text-align: center;
+    margin-top: 50px;
+    padding: 0px 40px;
+    font-size: 22px;
+    font-weight: 400;
+  }
+
+.hero-text-location-wrap {
+  margin-top: 20px; 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text .hero-text-location {
+  color: grey;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.hero-text-date {
+  color: grey;
+  font-size: 14px;
+  padding-left: 20px;
+  font-weight: 100;
+}
 
 .hero-section__img {
-  flex: 4;
   height: 400px;
-  background: rgba(0, 0, 0, 0.6);
-  position: relative; }
+  flex: 1;
+  background: rgba(0, 0, 0, 0.72);
+  position: relative;
+
+}
   .hero-section__img img {
     position: relative;
     z-index: -1; }
@@ -635,8 +670,11 @@ body {
     width: 100%;
     text-align: center; }
     .hero-section__img .overlay-text h1 {
-      font-size: 24px;
-      line-height: 36px; }
+      font-size: 32px;
+      line-height: 36px;
+      font-weight: bold;
+      color: #F86600;
+    }
 
 .mouse {
   bottom: 30px;
@@ -679,8 +717,10 @@ body {
     bottom: 3rem; } }
 .about-section {
   position: relative;
-  background-color: #f5f5dc;
-  height: 500px; }
+  background-color: white;
+  height: 500px;
+  border-top: 1px solid floralwhite;
+}
 
 .about-text {
   text-align: justify;
@@ -695,10 +735,13 @@ body {
   text-align: center; }
 
 .about-text__1 {
-  font-size: 20px;
-  line-height: 30px;
-  font-weight: 300;
-  margin-top: 10px; }
+  font-size: 22px;
+  font-weight: 500;
+  padding: 100px;
+  text-align: left;
+  line-height: 35px;
+  margin-top: 10px;
+}
 
 .about-text__2 {
   font-size: 28px;
@@ -723,32 +766,75 @@ body {
 /* Activities*/
 /* =============================================*/
 .activities {
-  background: beige; }
+  padding: 30px;
+  background: white; 
+}
 
 .activity-card {
-  background: #F86600;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 300px;
+  padding: 30px;
   position: relative;
+  box-shadow: 0px 0px 1px grey;
   margin: 10px; }
   .activity-card .activity-card__details {
     width: 100%;
     text-align: center; }
   .activity-card h1 {
     font-size: 22px;
-    line-height: 36px;
+    line-height: 26px;
     text-align: center;
-    font-weight: 400;
-    color: #f5f5dc; }
+    font-weight: 700;
+    color: #f86600;
+  }
   .activity-card p {
     font-size: 18px;
     line-height: 25px;
-    margin-top: 10px; }
+    margin-top: 10px;
+    color: #666;
+  }
 
+.activity-card-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.new-activity-tile {
+  display: flex;
+  flex-direction: row;
+  color: #666;
+  box-shadow: 0px 0px 1px #666;
+  margin: 5px;
+}
+.activity-tile-image {
+  flex: 5;
+  height: 150px;
+}
+.activity-tile-text {
+  flex: 7;
+  padding: 20px;
+}
+.activity-tile-text h2 {
+  color: #f86600;
+  font-weight: 700;
+  font-size: 1.2em;
+  line-height: 1.2;
+}
+
+.activity-tile-text p {
+  padding-top: 10px;
+}
 /* =============================================*/
 /* Facilities*/
 /* =============================================*/
 .facilities {
-  background-color: #f5f5dc;
+  background-color: blanchedalmond;
   text-align: center;
   color: #333;
   padding: 85px 0 60px 0; }
@@ -774,7 +860,7 @@ body {
 /* Pricing*/
 /* =============================================*/
 .pricing {
-  background-color: #f5f5dc;
+  background-color: blanchedalmond;
   padding-bottom: 120px;
   /* background: linear-gradient(to right, #34e89e, #0f3443);*/ }
   .pricing .heading-text {
@@ -795,7 +881,7 @@ body {
 
 .pricing-card {
   position: relative;
-  background-color: #f5f5dc;
+  background-color: blanchedalmond;
   color: #666;
   font-size: 20px;
   line-height: 40px;
@@ -834,7 +920,14 @@ body {
         margin-top: -4px; }
   .pricing-card .covered-info {
     position: relative;
-    list-style: inherit; }
+    list-style: inherit;
+    font-size: 16px;
+  }
+    .pricing-card .covered-info a {
+      display: inline;
+      font-size: 18px;
+      font-weight: bold;
+    }
     .pricing-card .covered-info a {
       color: #0f3443;
       transition: all 250ms ease-in-out; }
@@ -847,6 +940,7 @@ body {
         color: #0f3443;
         top: -5px;
         right: -18px; }
+
 
 .availability-info {
   font-style: italic;
@@ -879,7 +973,7 @@ body {
 /* =============================================*/
 .faqs-page {
   color: #333;
-  background-color: #f5f5dc;
+  background-color: blanchedalmond;
   padding: 135px 0 60px 0; }
   .faqs-page h3 {
     margin: 15px 0 10px 0;
@@ -905,7 +999,7 @@ body {
   color: #333; }
 
 .about-us {
-  background: beige;
+  background: blanchedalmond;
   position: relative;
   height: 330px; }
   .about-us article {
@@ -1027,7 +1121,7 @@ body {
 /* Partners*/
 /* =============================================*/
 .partners {
-  background-color: beige;
+  background-color: blanchedalmond;
   padding: 95px 0; }
   .partners img {
     height: 170px; }
@@ -1037,7 +1131,7 @@ body {
 /* =============================================*/
 .gallery {
   position: relative;
-  background-color: beige;
+  background-color: blanchedalmond;
   padding: 95px 0; }
 
 .img-card {
@@ -1072,7 +1166,7 @@ body {
 .location {
   position: relative;
   padding-bottom: 30px;
-  background: beige; }
+  background: blanchedalmond; }
 
 .location-mouse {
   margin-left: 40px;
@@ -1218,10 +1312,13 @@ footer {
 
   .hero-text .hero-text__1 {
     font-size: 24px;
-    line-height: 36px; }
+    line-height: 36px;
+    color: #F86600;
+  }
     .hero-text .hero-text__1 span:last-child {
       font-size: 36px;
-      line-height: 54px; }
+      line-height: 54px;
+    }
   .hero-text .hero-text__location {
     font-size: 20px;
     line-height: 30px; }
@@ -1282,7 +1379,9 @@ footer {
 
   .hero-text .hero-text__1 {
     font-size: 20px;
-    line-height: 30px; }
+    line-height: 30px;
+    color: #F86600;
+  }
   .hero-text .hero-text__location {
     font-size: 16px;
     line-height: 24px; }
@@ -1493,7 +1592,9 @@ footer {
 
   .hero-text .hero-text__1 {
     font-size: 16px;
-    line-height: 24px; }
+    line-height: 24px;
+    color: #F86600;
+  }
     .hero-text .hero-text__1 span:last-child {
       font-size: 20px;
       line-height: 30px; }
