@@ -543,10 +543,6 @@ body {
   transition: width 350ms ease-in-out;
 }
 
-.homepage-header {
-  box-shadow: 0px 0px 1px #666;
-}
-
 .logo {
   width: 180px;
   -webkit-transition: width 350ms ease-in-out;
@@ -1177,15 +1173,15 @@ body {
   width: 103px; }
 
 .secondary-header {
-  padding: 20px 80px;
+  padding: 10px 80px;
   background: white; }
   .secondary-header a {
     color: #F86600; }
-/*
-.homepage-header {
-  background: #F86600;
-  color: white;
-}*/
+
+.header-box-shadow {
+  box-shadow: 0px 0px 1px #666;
+}
+
 
 /* =============================================*/
 /* Location Page*/
