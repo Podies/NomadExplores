@@ -75,6 +75,13 @@
     }
   }
 }
+@media all and (min-width: 769px) {
+  .hero-section__img {
+    img {
+      height: 400px;
+    }
+  }
+}
 
 @media all and (max-width: 769px) {
   .grid {
@@ -90,14 +97,16 @@
   #logo2 {
     display: block !important;
   }
+  .hero-section{
+    padding-top: 110px;
+  }
+  .hero-section__content{
+    flex-direction: column;
+  }
   .hero-text {
     .hero-text__1 {
       font-size: 20px;
       line-height: 30px;
-      span:last-child {
-        font-size: 24px;
-        line-height: 36px;
-      }
     }
     .hero-text__location {
       font-size: 16px;
@@ -218,9 +227,6 @@
     height: 100%;
     float: left;
     margin-top: 49px;
-  }
-  .hero-text{
-    padding-top: 80px;
   }
   .heading-text {
     font-size: 30px;
@@ -343,7 +349,6 @@
     width: 60px;
   }
   .hero-text {
-    padding-top: 32px;
     .hero-text__1 {
       font-size: 16px;
       line-height: 24px;
