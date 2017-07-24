@@ -647,7 +647,7 @@ body {
     font-size: 22px;
     font-weight: 400;
   }
-  .hero-text .hero-text__4 {
+  .hero-text__4 {
     margin-top: 30px;
     font-size: 18px;
     color: #666;
@@ -1399,7 +1399,8 @@ footer {
     display: block !important; }
 
   .hero-section {
-    padding-top: 110px; }
+    margin-top: 90px;
+  }
 
   .hero-section__content {
     flex-direction: column; }
@@ -1617,11 +1618,26 @@ footer {
   #logo2 {
     width: 60px; }
 
+  .hero-text {
+    padding: 20px 30px;
+  }
+
+  .hero-text__4 {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
   .hero-text .hero-text__1 {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 26px;
     color: #F86600;
   }
+
+  .hero-text .hero-text-location {
+    font-size: 12px;
+  }
+
+
     .hero-text .hero-text__1 span:last-child {
       font-size: 20px;
       line-height: 30px; }
@@ -1641,8 +1657,37 @@ footer {
     margin-bottom: 16px; }
 
   .about-text__1 {
+    font-size: 13px;
+    line-height: 19px;
+    padding: 20px;
+  }
+
+  .activities {
+    padding-top: 20px;
+  }
+
+  .activity-tile-image {
+    flex: 4;
+    width: 125px;
+  }
+
+  .activity-tile-text {
+    flex: 8;
+    padding: 15px;
+  }
+
+  .activity-tile-text h2 {
     font-size: 14px;
-    line-height: 21px; }
+  }
+
+  .activity-tile-text p {
+    padding-top: 4px;
+    font-size: 12px;
+  }
+
+  .hero-section__img img.img-responsive{
+    height: 250px;
+  }
 
   .about-text__2 {
     font-size: 14px;
