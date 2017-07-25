@@ -654,7 +654,7 @@ body {
   }
 
 .hero-text-location-wrap {
-  margin-top: 20px; 
+  margin-top: 30px; 
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -663,15 +663,15 @@ body {
 
 .hero-text .hero-text-location {
   color: grey;
-  font-size: 14px;
-  font-weight: 100;
+  font-size: 15px;
+  font-weight: 200;
 }
 
 .hero-text-date {
   color: grey;
-  font-size: 14px;
+  font-size: 15px;
   padding-left: 20px;
-  font-weight: 100;
+  font-weight: 200;
 }
 
 .hero-section__img {
@@ -756,7 +756,7 @@ body {
   font-size: 22px;
   font-weight: 500;
   padding: 100px;
-  text-align: center;
+  text-align: justify;
   line-height: 35px;
   margin-top: 10px;
 }
