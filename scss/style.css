@@ -598,6 +598,16 @@ body {
     border: 2px solid #F86600; }
     .nav-links li .cta-btn:before {
       display: none; }
+  .nav-links li .ctd-btn {
+    padding: 12px 10px;
+    border-radius: 30px;
+    text-transform: uppercase;
+    color: #666;
+    font-size: 12px;
+    border: 2px solid #F86600;
+  }
+  .nav-links li .ctd-btn:before {
+      display: none; }
 
 .hero-section {
   margin-top: 95px; }
