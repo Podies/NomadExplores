@@ -1825,3 +1825,48 @@ footer {
     position: relative; } }
 
 /*# sourceMappingURL=style.css.map */
+
+
+
+/* upcoming  */
+.upcoming-page {
+  padding-top: 115px;
+  color: #333;
+  background: antiquewhite;
+}
+.upcoming-page-main-box {
+  border: 1px solid #f86600;
+  background: #f86600;
+  color: white;
+}
+.upcoming-page-main-box-head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.upcoming-page-main-box-head h1{
+  font-weight: bold;
+}
+.upcoming-page-main-box-date {
+  font-size: 14px;
+}
+.upcoming-page-main-box-body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.upcoming-page-main-box-body p {
+  font-size: 20px;
+}
+.upcoming-page-main-box-body .apply-btn {
+  margin-top: 15px;
+  padding: 12px 20px;
+  border-radius: 30px;
+  background-color: #fff;
+  text-transform: uppercase;
+  color: #F86600;
+  font-size: 12px;
+  border: 2px solid #F86600;
+}
