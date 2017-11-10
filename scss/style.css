@@ -403,11 +403,14 @@
 .dropdown-menu {
   display: none;
   position: absolute;
-  color: green;
   background: white;
   border: 1px solid #666;
-  padding: 10px 20px;
+  padding: 5px 10px;
   z-index: 101;
+}
+
+#dropdown-menu a {
+  font-size: 14px;
 }
 
 .hero-section__img .overlay-text, .about-text, .activity-card .activity-card__details, .icon-container span, .pricing-card .pricing-content, .about-us article {
@@ -619,8 +622,8 @@ body {
   .nav-links li .ctd-btn:before {
       display: none; }
 
-/*.hero-section {
-  margin-top: 95px; }*/
+.hero-section {
+  margin-top: 95px; }
 
 .explain-section {
   margin-top: 0px;
