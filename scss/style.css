@@ -1055,7 +1055,7 @@ body {
   padding: 100px 0; }
 
 .member-info {
-  min-height: 550px;
+/*  min-height: 550px;*/
   position: relative; }
 
 .team__member {
@@ -1610,7 +1610,7 @@ footer {
     display: none; }
 
   .member-info {
-    min-height: 500px;
+/*    min-height: 500px;*/
     position: relative;
     margin-bottom: 30px; }
 
@@ -1624,7 +1624,7 @@ footer {
         font-weight: 300; } }
 @media all and (max-width: 600px) {
   .member-info {
-    min-height: 550px;
+/*    min-height: 550px;*/
     position: relative; } }
 @media all and (max-width: 460px) {
   .grid {
@@ -1834,7 +1834,7 @@ footer {
       line-height: 21px; }
 
   .member-info {
-    min-height: 630px;
+/*    min-height: 630px;*/
     position: relative; } }
 
 /*# sourceMappingURL=style.css.map */
