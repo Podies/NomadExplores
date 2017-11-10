@@ -32,10 +32,17 @@
 						<ul class="nav-links menu">
 							<li><a href="/" id="link1">Home</a></li>
 							<li><a href="../upcoming" id="link2">Upcoming</a></li>
+							<li id="dropdown">
+								<a href="#" id="link2">Past</a>
+								<div class="dropdown-menu" id="dropdown-menu">
+									<a href="../past/mcleodganj">Mcleodganj (Sept-Oct 2017)</a>
+								</div>
+							</li>
+
 							<li><a href="https://blog.remoteexplorers.com/" target="_blank" id="link3">Blog</a></li>
 							<li><a class="faqs" href="../faqs" id="link4">FAQs</a></li>
 							<li><a href="../about" id="link2" class="active">About</a></li>
-							<li><a href="../gallery" id="link5">Gallery</a></li>
+							<!-- <li><a href="../gallery" id="link5">Gallery</a></li> -->
 							<!-- <li><a href="../day-pass" class="ctd-btn">Day Pass</a></li> -->
 							<li><a href="../apply" class="cta-btn">Apply</a></li>
 						</ul>
@@ -56,6 +63,26 @@
 				<h1 class="text-center heading-text">Our team</h1>
 				<div class="col-md-6 member-info">
 					<div class="col">
+						<div class="team__member">
+							<img src=".././images/ankit.jpg" class="img-responsive" alt="Prashant Abhishek">
+							<h3>Ankit Sinha</h3>
+							<p class="designation">Community Coordinator</p>
+							<p class="about-member">Prashant is a full-stack developer and tech-entrepreneur working from a village in the Indian Himalayas. He runs a team of developers and designers working on a variety of software products and services. He is a college dropout and believes in self and community-driven learning. He strongly believes in indie lifestyle, remote work and is actively engaged in shaping how the future of work is going to look like.</p>
+							<div class="member-info__contact">
+								<address>
+									<p>Rakkar, Dharamshala India.</p>
+								</address>
+								<div class="social">
+									<a class="social__icon" href="https://www.facebook.com/prank7" target="_blank"><span class="flaticon-social"></span></a>
+									<a class="social__icon" href="https://www.instagram.com/prank77" target="_blank"><span class="flaticon-social-media"></span></a>
+									<a class="social__icon" href="https://www.linkedin.com/in/prank7" target="_blank"><span class="flaticon-linkedin-sign"></span></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 member-info">
+					<div class="col">
 					<div class="team__member">
 							<img src=".././images/mayur.jpg" class="img-responsive" alt="Mayur Sontakke">
 							<h3>Mayur Sontakke</h3>
@@ -74,7 +101,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-6 member-info">
+				<div class="col-md-offset-3 col-md-6 member-info">
 					<div class="col">
 						<div class="team__member">
 							<img src=".././images/prashant1.jpg" class="img-responsive" alt="Prashant Abhishek">
@@ -186,6 +213,16 @@
 		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 		  ga('create', 'UA-98429740-1', 'auto');
 		  ga('send', 'pageview');
+		</script>
+		<script src="../scripts/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8" async defer></script>
+		<script type="text/javascript">
+			window.onload = function () {
+				$("#dropdown").hover(function(){
+			    $("#dropdown-menu").css("display", "block");
+			    }, function(){
+			    $("#dropdown-menu").css("display", "none");
+				});
+			}
 		</script>
 		<!-- Facebook Pixel Code -->
 		<script>

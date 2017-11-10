@@ -48,3 +48,4 @@ $(window).scroll(function() {
 	}
 	window.addEventListener("scroll", yScroll);
 });
+

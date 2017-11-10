@@ -32,10 +32,16 @@
             <ul class="nav-links menu">
               <li><a href="/" id="link1">Home</a></li>
               <li><a href="../upcoming" class="active">Upcoming</a></li>
+              <li id="dropdown">
+                <a href="#" id="link2">Past</a>
+                <div class="dropdown-menu" id="dropdown-menu">
+                  <a href="../past/mcleodganj">Mcleodganj (Sept-Oct 2017)</a>
+                </div>
+              </li>
               <li><a href="https://blog.remoteexplorers.com/" target="_blank" id="link3">Blog</a></li>
               <li><a class="faqs" href="../faqs" id="link4">FAQs</a></li>
               <li><a href="../about" id="link2" >About</a></li>
-              <li><a href="../gallery" id="link5">Gallery</a></li>
+              <!-- <li><a href="../gallery" id="link5">Gallery</a></li> -->
              <!--  <li><a href="../day-pass" class="ctd-btn">Day Pass</a></li> -->
               <li><a href="../apply" class="cta-btn">Apply</a></li>
             </ul>
@@ -54,7 +60,9 @@
             <p class="upcoming-page-main-box-date">7th Feb 2018 - 7th March 2018</p>
           </div>
           <div class="col-md-8 upcoming-page-main-box-body">
-            <p>Welcome to the party capital of India! Enjoy beautiful beaches while being super productive, doing yoga, enjoying the company of interesting like minded people! 
+            <p>An erstwhile Portuguese colony, Goa is a great example of how diverse India is. With a coastline of over 100 kilometers and hills nested in a small area, Goa has a lot to offer from pristine beaches, waterfalls, national parks, clubs, parties temples, churches, and much more.
+            <br/><br/>
+            For the foodies, Goan food is a treat with a fine blend of Portuguese and Indian flavors. That’s not all, being a traveler friendly destination, you name it and you’ll have it (almost)! For those looking for some spirit, Goa is the cheapest place to have alcohol in India ;) Isn’t that good enough already?
             </p>
             <p style="padding-top: 10px">Like our other retreat, we will cover accomodation, breakfast, lunch and tons of fun activities!</p>
             <a href="/apply" class="apply-btn">Apply Now</a>
@@ -99,6 +107,16 @@
       ga('send', 'pageview');
     </script>
     <!-- Facebook Pixel Code -->
+    <script src="../scripts/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script type="text/javascript">
+      window.onload = function () {
+        $("#dropdown").hover(function(){
+          $("#dropdown-menu").css("display", "block");
+          }, function(){
+          $("#dropdown-menu").css("display", "none");
+        });
+      }
+    </script>
     <script>
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;

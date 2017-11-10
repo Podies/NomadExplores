@@ -400,6 +400,16 @@
   -ms-flex-align: center;
   align-items: center; }
 
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  color: green;
+  background: white;
+  border: 1px solid #666;
+  padding: 10px 20px;
+  z-index: 101;
+}
+
 .hero-section__img .overlay-text, .about-text, .activity-card .activity-card__details, .icon-container span, .pricing-card .pricing-content, .about-us article {
   position: absolute;
   left: 50%;
@@ -1858,7 +1868,7 @@ footer {
   flex-direction: column;
 }
 .upcoming-page-main-box-body p {
-  font-size: 20px;
+  font-size: 16px;
 }
 .upcoming-page-main-box-body .apply-btn {
   margin-top: 15px;

@@ -32,10 +32,16 @@
 						<ul class="nav-links menu">
 							<li><a href="/" id= "link1">Home</a></li>
 							<li><a href="../upcoming" id= "link2">Upcoming</a></li>
+							<li id="dropdown">
+                <a href="#" id="link2">Past</a>
+                <div class="dropdown-menu" id="dropdown-menu">
+                  <a href="../past/mcleodganj">Mcleodganj (Sept-Oct 2017)</a>
+                </div>
+              </li>
 							<li><a href="https://blog.remoteexplorers.com/" target="_blank" id="link3">Blog</a></li>
 							<li><a href="../faqs" id="link4" class="active faqs">FAQs</a></li>
 							<li><a href="../about" id= "link2">About</a></li>
-							<li><a href="../gallery" id="link5">Gallery</a></li>
+							<!-- <li><a href="../gallery" id="link5">Gallery</a></li> -->
 							<!-- <li><a href="../day-pass" class="ctd-btn">Day Pass</a></li> -->
 							<li><a href="../apply" class="cta-btn">Apply</a></li>
 						</ul>
@@ -131,6 +137,16 @@
 		  ga('create', 'UA-98429740-1', 'auto');
 		  ga('send', 'pageview');
 		</script>
+		<script src="../scripts/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script type="text/javascript">
+      window.onload = function () {
+        $("#dropdown").hover(function(){
+          $("#dropdown-menu").css("display", "block");
+          }, function(){
+          $("#dropdown-menu").css("display", "none");
+        });
+      }
+    </script>
 		<!-- Facebook Pixel Code -->
 		<script>
 		!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
