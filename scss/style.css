@@ -1846,8 +1846,10 @@ footer {
 }
 .upcoming-page-main-box {
   border: 1px solid #f86600;
-  background: #f86600;
   color: white;
+  background: linear-gradient(0deg,rgba(0,0,0,0.8),rgba(0,0,0,0.4)), url('../images/Goa.jpg');
+  background-size: cover;
+  border-radius: 5px;
 }
 .upcoming-page-main-box-head {
   display: flex;
@@ -1860,6 +1862,7 @@ footer {
 }
 .upcoming-page-main-box-date {
   font-size: 14px;
+  font-weight: bold;
 }
 .upcoming-page-main-box-body {
   display: flex;
@@ -1869,6 +1872,7 @@ footer {
 }
 .upcoming-page-main-box-body p {
   font-size: 16px;
+  letter-spacing: 1.1px;
 }
 .upcoming-page-main-box-body .apply-btn {
   margin-top: 15px;
