@@ -403,11 +403,14 @@
 .dropdown-menu {
   display: none;
   position: absolute;
-  color: green;
   background: white;
   border: 1px solid #666;
-  padding: 10px 20px;
+  padding: 5px 10px;
   z-index: 101;
+}
+
+#dropdown-menu a {
+  font-size: 14px;
 }
 
 .hero-section__img .overlay-text, .about-text, .activity-card .activity-card__details, .icon-container span, .pricing-card .pricing-content, .about-us article {
@@ -619,8 +622,8 @@ body {
   .nav-links li .ctd-btn:before {
       display: none; }
 
-/*.hero-section {
-  margin-top: 95px; }*/
+.hero-section {
+  margin-top: 95px; }
 
 .explain-section {
   margin-top: 0px;
@@ -1052,7 +1055,7 @@ body {
   padding: 100px 0; }
 
 .member-info {
-  min-height: 550px;
+/*  min-height: 550px;*/
   position: relative; }
 
 .team__member {
@@ -1098,7 +1101,7 @@ body {
       color: #000; }
 
 .member-info__contact {
-  position: absolute;
+  /*position: absolute;*/
   bottom: 0; }
 
 .contact-us {
@@ -1607,7 +1610,7 @@ footer {
     display: none; }
 
   .member-info {
-    min-height: 500px;
+/*    min-height: 500px;*/
     position: relative;
     margin-bottom: 30px; }
 
@@ -1621,7 +1624,7 @@ footer {
         font-weight: 300; } }
 @media all and (max-width: 600px) {
   .member-info {
-    min-height: 550px;
+/*    min-height: 550px;*/
     position: relative; } }
 @media all and (max-width: 460px) {
   .grid {
@@ -1831,7 +1834,7 @@ footer {
       line-height: 21px; }
 
   .member-info {
-    min-height: 630px;
+/*    min-height: 630px;*/
     position: relative; } }
 
 /*# sourceMappingURL=style.css.map */
@@ -1846,8 +1849,10 @@ footer {
 }
 .upcoming-page-main-box {
   border: 1px solid #f86600;
-  background: #f86600;
   color: white;
+  background: linear-gradient(0deg,rgba(0,0,0,0.8),rgba(0,0,0,0.4)), url('../images/Goa.jpg');
+  background-size: cover;
+  border-radius: 5px;
 }
 .upcoming-page-main-box-head {
   display: flex;
@@ -1860,6 +1865,7 @@ footer {
 }
 .upcoming-page-main-box-date {
   font-size: 14px;
+  font-weight: bold;
 }
 .upcoming-page-main-box-body {
   display: flex;
@@ -1869,6 +1875,7 @@ footer {
 }
 .upcoming-page-main-box-body p {
   font-size: 16px;
+  letter-spacing: 1.1px;
 }
 .upcoming-page-main-box-body .apply-btn {
   margin-top: 15px;
