@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Remote Explorers is digital nomad community in the Indian Himalayas, organising a digital nomad retreat in India. We invite you to our home for a life-changing 30 days full of unique experiences, learning, collaboration, and getting things done. Being Indian digital nomads ourselves, we understand your needs and India very well. And what’s better than choosing Indian Himalayas for our first digital nomad retreat?" />
+    <meta name="description" content="Mcleodganj (Sept- Oct 2017) was our first digital nomad retreat. We did tons of activities, had a productive month and ofcourse had so much fun." />
     <title>Remote Explorers - A Digital Nomad Retreat.</title>
     <meta property="og:image" content="http://remoteexplorers.com/images/social.jpg">
     <meta property="og:image:type" content="image/jpg">
@@ -36,7 +36,12 @@
               <ul class="nav-links menu">
                 <li><a href="/" id="link1">Home</a></li>
                 <li><a href="../../upcoming" id="link2">Upcoming</a></li>
-                <li><a href="./past" class="active" id="link2">Past</a></li>
+                <li id="dropdown">
+                  <a href="#" id="link2">Past</a>
+                  <div class="dropdown-menu" id="dropdown-menu">
+                    <a href="../past/mcleodganj">Mcleodganj (Sept-Oct 2017)</a>
+                  </div>
+                </li>
                 <li><a href="https://blog.remoteexplorers.com/" target="_blank" id="link3">Blog</a></li>
                 <li><a href="../../faqs" id="link4" class="faqs">FAQs</a></li>
                 <li><a href="../../about" id="link5">About</a></li>
@@ -516,6 +521,16 @@
       })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
       ga('create', 'UA-98429740-1', 'auto');
       ga('send', 'pageview');
+    </script>
+    <script src="../scripts/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8" async defer></script>
+    <script type="text/javascript">
+      window.onload = function () {
+        $("#dropdown").hover(function(){
+          $("#dropdown-menu").css("display", "block");
+          }, function(){
+          $("#dropdown-menu").css("display", "none");
+        });
+      }
     </script>
     <!-- Facebook Pixel Code -->
     <script>

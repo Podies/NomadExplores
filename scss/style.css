@@ -1871,6 +1871,7 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: justify;
   flex-direction: column;
 }
 .upcoming-page-main-box-body p {
