@@ -880,6 +880,7 @@ body {
 .activity-tile-image {
   flex: 5;
   height: 150px;
+  border-radius: 7px;
 }
 .activity-tile-text {
   flex: 7;
