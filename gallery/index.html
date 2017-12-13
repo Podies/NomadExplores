@@ -36,6 +36,12 @@
 						<ul class="nav-links menu">
 							<li><a href="/" id="link1">Home</a></li>
 							<li><a href="../upcoming" id="link2">Upcoming</a></li>
+							<li id="dropdown">
+                <a href="#" id="link2">Past</a>
+                <div class="dropdown-menu" id="dropdown-menu">
+                  <a href="../past/mcleodganj">Mcleodganj (Sept-Oct 2017)</a>
+                </div>
+              </li>
 							<li><a href="https://blog.remoteexplorers.com/" target="_blank" id="link3">Blog</a></li>
 							<li><a class="faqs" href="../faqs" id="link4">FAQs</a></li>
 							<li><a href="../about" id="link2">About</a></li>
@@ -138,6 +144,15 @@
 
 		<script src=".././scripts/jquery-3.1.0.min.js" type="text/javascript" charset="utf-8" async defer></script>
 		<script src=".././scripts/lightbox-plus-jquery.min.js" type="text/javascript" charset="utf-8" async defer></script>
+		<script type="text/javascript">
+			window.onload = function () {
+				$("#dropdown").hover(function(){
+			    $("#dropdown-menu").css("display", "block");
+			    }, function(){
+			    $("#dropdown-menu").css("display", "none");
+				});
+			}
+		</script>
 		<script>
 		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
