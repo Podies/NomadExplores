@@ -337,7 +337,7 @@
 }
 
 /* =============================================*/
-/*  */
+/* Pricing*/
 /* =============================================*/
 .pricing {
   background-color: #f5f5dc;
@@ -393,8 +393,6 @@
       display: inline-block;
       margin-left: 20px;
       position: relative;
-      font-size: 20px;
-      line-height: 28px;
       &:before {
         content: '';
         height: 8px;
@@ -411,13 +409,8 @@
   .covered-info {
     position: relative;
     list-style: inherit;
-    font-size: 16px;
     a {
-      display: block;
       color: #0f3443;
-      display: inline;
-      font-size: 18px;
-      font-weight: bold;
       transition: all 250ms ease-in-out;
       &:hover, &:hover .flaticon-logo:before {
         color: $accent-color;
@@ -676,14 +669,7 @@
 /* Apply*/
 /* =============================================*/
 .apply-page {
-  padding-top: 40px;
-  background: #ffebcd;
-  .pricing {
-    padding-bottom: 60px
-  }
-  .pricing-table {
-    margin-top: -130px;
-  }
+  padding-top: 95px;
 }
 .orange-logo {
   width: 103px;
