@@ -876,6 +876,7 @@ body {
   color: #666;
   box-shadow: 0px 0px 1px #b7b7b7;
   margin: 5px;
+  border-radius: 7px;
 }
 .activity-tile-image {
   flex: 5;
